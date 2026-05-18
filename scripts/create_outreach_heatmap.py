@@ -47,9 +47,12 @@ def main() -> None:
     dataframe["longitude"] = pd.to_numeric(dataframe["longitude"], errors="coerce")
     invalid_coordinates = dataframe[dataframe["latitude"].isna() | dataframe["longitude"].isna()]
     if not invalid_coordinates.empty:
-        invalid_rows = ", ".join(str(index + 2) for index in invalid_coordinates.index[:5])
+        max_listed = 5
+        invalid_rows = ", ".join(str(index + 2) for index in invalid_coordinates.index[:max_listed])
+        extra_count = len(invalid_coordinates.index) - max_listed
+        extra_message = f" ... and {extra_count} more" if extra_count > 0 else ""
         raise ValueError(
-            f"Found invalid latitude/longitude value(s) in CSV row(s): {invalid_rows}"
+            f"Found invalid latitude/longitude value(s) in CSV row(s): {invalid_rows}{extra_message}"
         )
 
     if "attendance" in dataframe.columns:
