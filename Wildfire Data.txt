@@ -1,0 +1,1564 @@
+1
+Do California Insurers
+Reward Wildfire Resilience
+Carolyn Kousky and Xuesong You
+In 2022, California implemented regulations requiring homeowners insurers to adopt
+premium discounts for policyholders who take steps to lower the risk of a wildfire burning
+their home. In this essay, we examine how California insurers have responded to these
+new regulations and summarize the premium reductions currently available in the
+California market. If homeowners adopt both the maximum home hardening upgrades and
+defensible space, the greatest premium discount they will receive varies from only a few
+percent to over 40 percent depending on the insurer and the loss reduction standards
+adopted.
+Making Homes Safer from Wildfire
+Wildfire risk in California has been growing as a result of a confluence of factors. Climate
+change is increasing the frequency of hot and dry conditions that exacerbate wildfire
+behavior. A warming planet has also brought drought and pest infestations to California’s
+forests, causing millions of trees to die, which then become easy fuel for a fire. The number
+of structures in areas prone to wildfire has grown and many of those have not been built to
+high levels of wildfire resistance. A history of fire suppression has led to fuel buildup in some
+of the state’s forests, causing more catastrophic fires than there would be otherwise. All of
+these are driving up wildfire risk in the state.
+As several fires have demonstrated, including the recent blazes in Los Angeles, it is not just
+wildland fires that are a risk to California, but also urban conflagrations, which can occur
+when those wildfires spread into developed areas. In urban fires, buildings become the fuel
+that allows fire to spread from structure-to-structure. While the dangerous combination of
+high winds and very dry conditions enables these urban fires, how we build can make a
+difference. This includes making homes more wildfire-resistant, reducing flammable
+materials near the home, and ensuring adequate separation between structures. Creating
+fuel breaks in the community and improving the management of surrounding natural lands
+can also lower fire risk.
+Wildfire and building science has identified measures that help make homes more fireresistant. This includes protecting the home against embers, radiant heat, and flames
+through upgrades such as installing flame- or ember-resistant vents, cleaning gutters,
+installing a Class A roof, using multi-pane windows, and ensuring noncombustible
+clearance on exterior walls, among others. Many of these improvements are captured in
+California’s Chapter 7a building code, one of the strongest fire codes in the country
+(becoming California Wildland-Urban Interface Code (CAWUIC) Part 7 in 2026). Adopted in
+2008, the code applies only to new construction in certain designated areas. So, while
+critical, many existing structures across the state still need retrofitting. There are also some
+Nov 4
+2
+areas at greater risk of urban fires, including part of the Eaton fire footprint, where the code
+should arguably apply but does not.
+Beyond the structure itself, the so-called “zone zero” of zero to five feet from the home
+should also be clear of combustible materials. This includes removing brush, mulch, or
+firewood piles, for example, and also ensuring fencing next to the house is noncombustible.
+Research examining surviving homes after past wildfires verifies the huge value of these
+changes: not only does it help make homes less likely to burn, but it also provides
+protection to neighboring homes.
+Community layout also matters. Homes can ignite their neighbors through embers, flame,
+or radiant heat. A minimum of 30 feet between structures is recommended to limit spread
+from one home to another. In addition, creating buffers around clusters of hardened homes
+and ensuring easy road access for firefighters can possibly slow spread or increase the
+effectiveness of firefighting defense forces.
+The greatest fire reduction is achieved when all these measures are done together. Recent
+studies examining past fire losses indicate that combining home hardening with the
+creation of defensible space has the potential to dramatically reduce losses. The Insurance
+Institute of Business and Home Safety (IBHS) has designed the integrated Wildfire
+Prepared Home (WPH) Base and WPH Plus standard, which unite all these measures for
+maximum protection. WPH covers core features such as the roof and vents, as well as
+enclosing lower-level decks where embers might land, establishing the 0-5 foot noncombustible zone, and defensible space in the yard. WPH+ adds additional requirements
+that focus on areas where home ignition or spread is most likely to occur, such as
+upgrading windows and doors to withstand heat-induced shattering, switching to noncombustible materials for decks, and moving adjacent structures and connected fencing
+away from the main building. Additionally, IBHS has announced a Wildfire Prepared
+Neighborhood standard that also integrates community-level measures. The IBHS
+standards are the most stringent and comprehensive, although it may be more difficult and
+expensive to achieve in already built homes and communities.
+Insurance Incentives for Loss Reduction
+Insurance prices should reflect risk. When measures are adopted that lower wildfire risk,
+then, this should be reflected in insurance market outcomes in terms of lower prices or
+greater availability of coverage. There have been consumer concerns, however, that even
+when investments in safety are made, they have not been showing up in the insurance
+market. Why does this matter?
+Mitigation discounts build consumer trust in the insurance market. It demonstrates
+that insurance pricing takes into account the actual risk at a property, as well as any
+benefits associated with mitigation investments made on the property, and that insurers
+will share those benefits with their policyholders. This increases perceptions of fairness.
+Discounts for loss reduction also correct market failures. When a homeowner invests
+in risk mitigation that effectively reduces potential losses, they lower not only their own risk
+of experiencing a catastrophic fire but also the insurer's overall exposure. Without
+mitigation discounts, homeowners bear the full cost of these investments while the
+insurers reap much of the financial benefit of reduced losses. Beyond this being perceived
+3
+as unfair by consumers, it also is a form of market failure, where homeowners have less
+incentive to invest in mitigation because the full benefit is not reflected in their premiums.
+Insurance discounts for mitigation allow homeowners to capture some of the economic
+value, thereby aligning financial incentives – homeowners are rewarded with lower
+premiums for their individual investments in risk reduction.
+Transparent mitigation discounts help convey information about clear actions
+customers can take. Beyond aligning incentives, mitigation discounts also generate
+valuable information by simplifying complex engineering guidance into clear price signals
+that households can easily understand. When insurers set discounts appropriately to
+reflect the value of each mitigation measure, households can quickly learn about the
+effectiveness of these investments with reduced information costs. But this value only
+materializes if the discounts are accompanied by clear and transparent communication.
+Individual mitigation generates collective benefits. Finally, there are two types of
+spillover effects as homeowners engage in mitigation. When one property owner reduces
+risk it lowers risk for the neighbors, as well. Also, when neighbors take actions to reduce
+risk, others often follow suit. The increased demand for fire-resistant building materials,
+defensible space services, or/and certified inspectors can then help lower costs over time
+through economies of scale and create positive feedback loops encouraging even greater
+loss reduction and further improved insurance market outcomes.
+California’s Recent Regulations
+Since wildfire mitigation discounts were not being widely offered voluntarily by insurers, the
+California Department of Insurance adopted a new regulation in the fall of 2022 referred to
+as Safer from Wildfire. The regulation requires property insurers in California that offer any
+price variation based on wildfire risk to also adjust their rates to account for investments in
+improving the wildfire resilience of homes (CA Code of Regulation Section 2644.9). The
+California Department of Insurance created a list of a dozen wildfire risk reduction
+measures that insurers had to consider in new rate filings by spring 2023.
+This list, as detailed in Table 1, includes two community-level designations, five defensible
+space-related measures, and five home hardening-related measures. The two community
+measures are Firewise USA, a voluntary program that provides a framework for
+communities to reduce risk, and the state’s list of Fire Risk Reduction Communities, which
+have met best practices for wildfire planning. Of note, since the IBHS Wildfire Prepared
+Home program launched that same year, it is not on the required list from the Department
+of Insurance, although some insurers are offering discounts for it voluntarily.
+The regulation did not, though, mandate what the discounts for each mitigation measure
+had to be – only that insurers must offer something. That said, insurers have to provide
+justification for the discounts in their rate filing. As loss data and evidence on various
+measures continues to be collected, the discounts should likewise evolve. In addition, while
+insurers are required to take these twelve specific measures into account, they are not
+prohibited from considering others such as fuel management or firefighter access. Insurers
+have the option to incorporate these additional factors by either integrating them into the
+wildfire risk score used for rate-setting or by providing separate credits for them.
+Table 1: Wildfire Mitigation Measures California Insurers Must Consider for Rate Setting
+5
+In addition, insurance companies were required to notify policyholders about the new
+regulation. The communication to the policyholder had to include details on the risk
+classifications and discounts, explain how the current policyholder was being evaluated,
+and outline what mitigation measures the policyholder could adopt to obtain greater
+savings.
+Wildfire Mitigation Discounts in the Market
+To gain a better understanding of the wildfire mitigation discounts available in the market,
+we reviewed the current rate filings as of October, 2025 for the top 15 California
+insurance companies, which together account for 83% of the market share according to
+direct premiums written for homeowners business in 2024. Note that insurers could have
+rate filings under review and will submit new ones over time – this is thus a current
+snapshot of the market. The appendix table at the end of the post shows all the
+discounts for each of the mandated 12 mitigation measures by these insurance companies
+(listed in order of market share), as well as the discounts offered for optional measures
+such as IBHS Wildfire Prepared Home. In addition, some insurers offer a “completion
+discount,” which is an extra premium reduction for homeowners that have undertaken
+some or all the mandated measures. Table 2 summarizes this information and shows the
+range of discounts offered for various mitigation measures across these insurers. (Note
+that the CA FAIR plan also provides discounts but they are not included in our analysis.)
+Table 2: The Range of Wildfire Mitigation Discounts Offered by the Top 15 Insurers
+7
+Before we dive into the main findings, there are three important notes about the numbers.
+First, this table reflects pricing, not underwriting – it says nothing about whether
+these insurers are offering more or fewer policies in high-wildfire risk areas. (The
+California Department of Insurance has another approach – the Sustainable Insurance
+Strategy – to increase greater writing of policies in wildfire-prone areas.)
+Second, note that the percentage numbers apply to different base premiums, the
+fundamental starting price of a policy. Different insurers will charge different premiums for
+the same property, so the percentage shown will not translate to the same dollar discount.
+Also, note that some insurers apply their discounts only to the wildfire portion of the
+premium, while others apply them to the entire premium. A percentage applied to just
+the wildfire portion will have a lower impact in absolute dollars for the policyholder than one
+applied to the entire premium. This is noted in the table: State Farm and CSAA are the two
+insurers that apply percentages to the entire premium and the others apply just to the
+wildfire portion of the premium.
+Finally, in most cases, the mitigation measures do not affect the “Wildfire Risk Score” used
+by some California insurers to determine rates; instead, they are applied as a discount
+factor. However, in some instances, these measures can directly change the “Wildfire Risk
+Score,” resulting in a change in the premium through both the score and the discount
+factor.
+What did we find?
+Discounts vary greatly across insurers. The same mitigation measure can be treated
+quite differently by different insurers. For example, the discount given for living in a Firewise
+Community ranges from less than 1% to 20% (both applied to the wildfire portion of the
+premium). Having a Class A roof can yield discounts from less than 1% to 5%. Some
+insurers offer no discounts for IBHS WPH(+) properties, and among those that do,
+properties that meet the IBHS WPH+ standard can receive discounts ranging from less
+than 4% to 39%. This variation is somewhat surprising and suggests insurer confidence in
+the evidence base around the effectiveness of different measures may vary considerably,
+as well as their assessment of consumer demand to maintain a policy with an insurer that
+rewards wildfire mitigation. Given the variation in discounts, consumers who have invested
+in wildfire risk reduction should shop insurers, especially those with an IBHS WPH or WPH+
+home since not all carriers are offering sizable premium savings for that level of certified
+investment in loss reduction.
+Mitigation measures are not equal. Wildfire and building science indicate that all
+mitigation measures are not equal in terms of loss reduction and this is clearly reflected in
+insurer discounts: some measures are given larger premium reductions than others. In
+particular, having a Class A roof stands out as widely recognized as an important upgrade,
+with six insurers offering the highest discounts for this as compared to other property-level
+measures. Since most homeowners in California already have a Class A roof, this discount
+should be widespread. Still, a number of insurers simply offer the same discount for each
+individual measure, regardless of their varying potential impacts on losses. This is likely due
+to a lack of data from historical experience to accurately evaluate and model the loss
+impact associated with one-off adoption of individual mitigation features. Indeed, a few
+8
+insurers have noted in their filings that they do not have sufficient and credible wildfirespecific claims data, along with the necessary details on required mitigation measures, to
+inform the discounts they establish.
+A comprehensive approach to mitigation matters. Many wildfire experts note that it is
+important to do all the wildfire risk reduction measures as a complete package. When
+individual mitigation measures are taken in isolation, their effectiveness in reducing losses
+can be limited. However, when some or all of these measures are combined, their effects
+can be much larger. This understanding is also reflected in the discounts. Many insurers
+offer only small price reductions – often around half a percent for each individual measure
+alone. When done together, however, the premium reductions combine and four insurers –
+Farmers, Allstate, Travelers, and Sutton National – also offer an additional “completion
+discount.” Mercury refers to their version of completion discounts as “Mercury Wildfire
+Mitigation (plus)” discounts. While Auto Club Southern California does not offer a
+standalone “completion discount,” it provides a tiered structure that rewards substantial
+completion: Policyholders who complete up to six property-level measures will receive a 1%
+increase in their discount for each additional measure completed; for those who complete
+seven or more total measures, the discount increase accelerates to 2-3% for each
+measure completed beyond the sixth.
+To further incentivize a comprehensive approach to mitigation efforts, seven insurers –
+State Farm, Mercury, CSAA, Travelers, Safeco, Nationwide, and Liberty Mutual – also offer
+discounts for IBHS certification, with some providing sizable savings. The IBHS WPH and
+WHP+ standards are complete packages of many measures together. Specifically, IBHS
+WPH includes property-level measures shown in Table 1 of 3, 4, 5, 8, 10, and 12 and IBHS
+WPH+ includes all those, as well as 6, 9, and 11. When policyholders qualify for both
+individual and IBHS discounts, four of the seven insurers that reward IBHS certification –
+State Farm, Mercury, CSAA, and Travelers – provide premium savings in the form of an
+IBHS-specific “completion discount,” i.e., an additional discount on top of the individual
+discounts for measures taken alone. The remaining three insurers only provide the IBHS
+discount as the maximum available discount, although this IBHS discount is typically
+greater than the sum of these individual discounts alone.
+Note that the IBHS discounts from Mercury depend upon home spacing, which has been
+shown to influence how likely a home is to catch fire from its neighbors. The maximum IBHS
+discounts for WPH (28%) and WPH+ (39%) are for homes at least 30 feet from each other.
+At less than 10 feet separation, those discounts drop to 5% for WPH and 10% for WPH+.
+The Mercury version of completion discounts (for homes that do not have IBHS
+designations), what they refer to as “Mercury Wildfire Mitigation (plus)” also varies by
+home separation. These discounts are just slightly less than those given for IBHS
+certifications.
+The way firms combine discounts, however, varies, making the total potential discounts for
+completing multiple mitigation efforts less straightforward. Some insurers, such as Mercury,
+USAA, Travelers, and Federal Insurance, multiply discounts (rather than adding them). For
+example, if a Federal Insurance customer installed a Class-A roof (5% discount) and multipane windows (5% discount), Federal Insurance calculates the total discount as 1 -
+(1-5%)*(1-5%)=9.75% (instead of 5% + 5% = 10%). The difference grows larger when you
+do the multiplications for all 12 measures. When a home is located in a community
+9
+recognized as both a Firewise USA site in good standing and a Fire Risk Reduction
+Community, some insurers, such as Auto Club Southern California, Sutton National, and
+Pacific Specialty, impose a maximum cap that is lower than the combined community
+discounts.
+To facilitate comparison, we calculate the total possible discounts that policyholders
+should expect from the top 15 insurance companies. Table 3 lists these firms, whether or
+not they offer an IBHS discount, and outlines the premium discount policyholders should
+expect for two combinations of mitigation measures: (1) completing all 12 mandated
+property-level and community-level measures/designations from Table 1 (shown in column
+5 of Table 3), and (2) completing all 10 property-level measures, as well as IBHS WPH+
+certification (for those insurers not offering IBHS discounts, it is just the discount for
+completing all the property-level measures) (shown in column 6 of Table 3). Again, we
+observe wide variation among insurers. In Column 5 of Table 3, the total potential discounts
+for completing all 12 mitigation measures (without obtaining IBHS certifications) range from
+3% to 28%. In Column 6, having a home that completes all 10 property-level measures and
+is IBHS WHP+ certified can yield potential discounts of 2.6% to 42% across different
+insurers.
+10
+Verification processes differ. While not shown in the table, the methods used by
+insurers to verify mitigation efforts also vary, as noted in their filings. For the property-level
+mitigation measures, some insurers require certified inspections conducted by approved
+inspectors or from an independent, third-party organization like IBHS, while others only
+require self-attestation or customer-provided photos or documentation. It is generally easier
+and less costly on the policyholder if they can self-attest or provide photos. That said, if
+insurers are going to give substantial discounts, they will want to be certain the mitigation
+measures have been properly implemented.
+Table 3: Select Wildfire Mitigation Discounts by Firm
+11
+Absolute discounts will depend on risk levels. Also, note that the underlying risk may
+still lead to higher premiums in the riskiest locations, but the dollar value of mitigation
+discounts will also be greater in those areas. For example, consider two hypothetical
+homes, Home A and Home B, both insured with Liberty Mutual, in a Los Angeles community
+recognized as a Firewise USA site in good standing and a Fire Risk Reduction Community.
+Home A is at a high risk of wildfire and has an initial premium (without mitigation) of $8,302,
+with $4,509 attributed to wildfire peril. In contrast, Home B has a low wildfire risk with an
+initial premium (without mitigation) of $2,339, and just $30 attributed to wildfire peril. If both
+homes are built to the WPH+ standard, they could each qualify for a discount of 21% off
+the wildfire portion of their premiums. The homeowner of Home A would save $4,509 * 21%
+= $947, while the owner of Home B would save $30 * 21% = $6. The absolute discount for
+Home A is much larger, but so is their final premium due to the higher risk associated with
+their location.
+Considerations for the Future of Insurability in California
+Reflection of mitigation investments in insurance pricing not only increases perceptions of
+fairness in insurance markets but also is an information signal and financial incentive to
+drive much needed investments in risk reduction measures. The recent regulation by the
+CA Department of Insurance has been successful in requiring insurers in the state to
+incorporate wildfire mitigation measures into their pricing, although the magnitude of these
+pricing reductions varies considerably, suggesting lack of agreement across the industry
+on the direct relationship between some individual measures and lower claims payments.
+As data evolves on the effectiveness of different measures, the offered mitigation
+discounts should also adjust.
+It is clear from wildfire science that the most risk reduction is achieved when a full suite
+of home hardening and defensible space measures are taken together. Insurer
+premium discounts also reflect this reality, with the largest savings being awarded to
+homes that have undertaken all the measures or have complied with the IBHS standard.
+Indeed, the highest discounts are for homes that achieve the IBHS WPH+ standard,
+although substantial reductions can also be achieved for homes that adopt all the
+measures in the list from the Department of Insurance. While the premium discounts are
+unlikely to cover the full costs of wildfire home hardening retrofits, they do help promote
+longer-term insurability and, importantly, lower future losses–including uninsured losses,
+such as irreplaceable personal items.
+The way the discounts are calculated, what measures are rewarded, and how they can be
+combined is different for every insurer. This is likely to create consumer confusion and
+makes messaging around mitigation and insurance more challenging. Indeed, it is unclear
+how much transparency there is for consumers around these discounts. While insurers
+were required to notify policyholders, consumers often disregarded mailings. In addition,
+most consumers do not often re-shop their insurance with an independent agent. The
+variation in discounts offered suggests it could be highly advantageous to a homeowner
+who had invested in home hardening, particularly doing many of the measures together or
+achieving either of the IBHS certifications, to then contact an independent agent (one not
+12
+tied to only one insurer) or multiple captive insurance agents (those working for only one
+firm) to get multiple quotes and compare which firm would offer them the best price.
+The discounts currently offered on the market, however, are provided against a backdrop of
+ongoing insurer concern about rate adequacy in the state. The Department of Insurance
+has undertaken several other related reforms to address these concerns and encourage
+more insurers to return to California. This includes their Sustainable Insurance Strategy,
+which allows for the use of wildfire catastrophe models in rate-setting and also allows
+insurers to account for reinsurance costs. Both also come with requirements to expand
+coverage availability in higher-risk areas. The department has also recently begun a
+process to reform the intervenor process. All of these reforms are likely to continue to
+attract more insurers and increase competition, which will ultimately benefit consumers.
+To get a sense of what mitigation discounts might be most impactful in changing market
+availability (as opposed to pricing), we looked to see if any mitigation features are specified
+in the current underwriting criteria disclosed in insurers’ rate filings. Notably, we find that
+some insurers have indicated a willingness to write more policies in high-risk areas if
+properties are certified as meeting the IBHS WPH+ standard. For instance, currently
+Farmers only insurers homes in areas of high fire risk (as measured by zone, slope, and
+fuels) if they are IBHS WPH+. If you secure a WPH certification (base or plus level), CSAA
+Insurance Group has committed that your single-family homeowners policy won't be nonrenewed due to wildfire risk and they will renew your homeowners policy for a minimum of
+three years if you maintain the certification and all other requirements of your policy.
+Mercury noted in its filing that, subject to any concentration restrictions, they would not
+restrict new business for homes that are IBHS WPH or WPH+ certified. This suggests that
+insurers might be open to expanding into high-risk areas as long as certain measures can
+demonstrably change their loss profiles in reliable ways.
+For consumers, three key findings emerge from this snapshot of wildfire mitigation
+discounts in the California market. First, home hardening and defensible space matters for
+insurability and insurance premiums. Homeowners should seek out information on retrofits
+to improve the wildfire resilience of their home, especially if they are going to be
+undertaking any other work or construction on their house. Indeed, incorporating wildfire
+measures during other construction could be less disruptive and possibly more costeffective and will improve insurance outcomes. Second, the best chance at insurance
+availability and improved pricing is by undertaking the full suite of measures in the IBHS
+WPH certification. Finally, if homeowners do invest in risk reduction, they should share the
+information with their insurer and also shop their policy, as well.
+Appendix: Mitigation Discounts for Top Homeowners Insurers in California as of Fall 2025
+14
+Notes to appendix table: a - for policies with a FireLine score of 1-3; b - for policies with a
+FireLine score of 4+; c - for policies with a Zesty Level 1 Group of 1-2; d - for policies with a
+Zesty Level 1 Group of 3-5; e - for policies with a Zesty Level 1 Group of 6-10; f - Author’s
+calculation based on the equations provided. g - apply if structure separation <=10 feet; h -
+apply if structure separation >10 feet and <30 feet; i - apply if structure separation >=30
+feet; jk - for homes that do not have IBHS Wildfire Prepared Home designations but have
+completed a combination of specified home hardening and defensible space
+improvements; l - includes communities that meet IBHS Wildfire Prepared Neighborhood or
+similar standards (e.g., communities that effectively remediate connective fuel pathways
+around and within the community, communities where the structures meet home
+hardening requirements); m - 16% if both Mercury Wildfire Mitigation Community and
+Firewise USA Recognition Program, 15.1% if both Mercury Wildfire Mitigation Community and
+Fire Risk Reduction Community, 16.1% if Mercury Wildfire Mitigation Community, Firewise
+USA Recognition Program, and Fire Risk Reduction Community; n - for Type 1 and Type 2
+non-combustible fire-resistive constructions that meet Mercury’s window, vent, and
+defensible space requirements; o - apply if in High or Very High Wildfire Hazard Zone.
+
+
+
+From Risk to Reward:
+Insurance Discounts for
+Wildfire Mitigation
+Evan Ludington, Yanjun (Penny) Liao, and Margaret Walls
+Working Paper 25-30
+December 2025
+Resources for the Future i
+About the Authors
+Evan Ludington is a senior at Stanford University studying History and Earth
+Systems. He was a summer 2025 research intern at Resources for the Future (RFF)
+working under the auspices of the Stanford Woods Institute’s Environment and Policy
+Internship program. Currently, he’s working on a senior thesis on disaster management
+in California’s 1862 Great Flood. He has previously worked in the California State
+Senate and the Institute for Sustainable Energy Policies in Tokyo. 
+Yanjun (Penny) Liao is an economist and fellow at RFF. Liao’s research primarily
+focuses on issues of natural disaster risk management and climate adaptation. She has
+studied the impacts of disasters on local government budgets, housing markets, and
+demographic changes. Her ongoing work investigates how disaster insurance interacts
+with the housing and mortgage sector, as well as the economic and fiscal impacts of
+adaptation policies on local communities. Liao earned her PhD in economics from UC
+San Diego and conducted her postdoctoral research at the Wharton Risk Center at
+University of Pennsylvania.
+Margaret Walls is a senior fellow and director of the Climate Risks and Resilience
+Program, as well as cohost of RFF’s podcast, Resources Radio. Walls’s research
+focuses on the impacts of extreme weather, floods, hurricanes, and wildfires on people
+and communities and the design of programs and policies to equitably enhance
+resilience to such events.
+Acknowledgements
+The authors appreciate financial support for this research from the Gordon and Betty
+Moore Foundation.
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation ii
+About RFF
+Resources for the Future (RFF) is an independent, nonprofit research institution in
+Washington, DC. Its mission is to improve environmental, energy, and natural resource
+decisions through impartial economic research and policy engagement. RFF is
+committed to being the most widely trusted source of research insights and policy
+solutions leading to a healthy environment and a thriving economy.
+Working papers are research materials circulated by their authors for purposes of
+information and discussion. They have not necessarily undergone formal peer review.
+The views expressed here are those of the individual authors and may differ from those
+of other RFF experts, its officers, or its directors.
+Sharing Our Work
+Our work is available for sharing and adaptation under an AttributionNonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license. You
+can copy and redistribute our material in any medium or format; you must give
+appropriate credit, provide a link to the license, and indicate if changes were made,
+and you may not apply additional restrictions. You may do so in any reasonable
+manner, but not in any way that suggests the licensor endorses you or your use.
+You may not use the material for commercial purposes. If you remix, transform, or
+build upon the material, you may not distribute the modified material. For more
+information, visit https://creativecommons.org/licenses/by-nc-nd/4.0/.
+Resources for the Future iii
+Abstract
+In 2022, California implemented a major insurance reform requiring insurance
+companies to provide premium discounts to policyholders who undertake wildfire
+hazard mitigation, such as installation of fire-resistant roofs, vents, and windows and
+maintaining defensible space around homes. To evaluate early implementation of this
+reform, we draw on insurance rules and rate filings to create a database of mitigation
+discounts offered by insurers. We analyze how discount amounts vary across
+mitigation measures, insurers, and regions, and assess whether they are large enough
+to motivate homeowners to undertake these actions. We also compare the California
+policy to similar policies in states subject to hurricane and windstorm risks. Our results
+indicate that the current discounts are small: the costs of property retrofits are orders
+of magnitude greater than the insurance savings. They are also considerably smaller
+than wind insurance discounts in other states, which we attribute largely to greater
+uncertainty in the effectiveness of individual wildfire mitigation efforts, coupled with
+risk externalities from structure-to-structure fire spread and community-level fuel
+hazards that weaken the link between household-level investments and expected
+insurer losses. 
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation iv
+Contents
+1. Introduction 1
+2. Wildfire Hazard Mitigation 3
+3. Insurance Regulations and California Reforms 4
+4. Discounts in Practice 6
+4.1. The Magnitude and Range of Discounts 8
+4.2. Variation in Wildfire Risk and Discounts Across California 13
+4.3. Are the Discounts Enough? 17
+5. Lessons from Other States 18
+5.1. Insurance Discounts in Other States 18
+5.2. Why Are California’s Wildfire Mitigation Discounts Relatively Small? 21
+6. Conclusion 23
+References 24
+Appendix A: Supplemental Figures and Tables 26
+Appendix B: Methodology for the Analysis of Rate Filings 27
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 1
+1. Introduction
+In October 2022, California became the first state to mandate that insurance
+companies offer discounts on homeowner’s insurance premiums for investments in
+wildfire mitigation. The “Safer from Wildfires” regulations require insurers that base
+their rates on wildfire hazard to offer discounts for vegetation clearing and removal of
+combustible structures, as well as home hardening measures such as the installation of
+fire-resistant roofs, vents, and windows.1
+ Mitigation discounts also must be offered for
+homes located in communities that participate in organized community-level mitigation
+programs such as Firewise USA, a voluntary program administered by the National Fire
+Protection Association.2
+In addition to providing financial incentives for homeowners to invest in hazard
+mitigation, the policy is a component of California’s regulatory efforts to foster a more
+stable and affordable insurance market. California has had well-documented problems
+in its insurance market in recent years, with growing numbers of policy nonrenewals
+and rising enrollment in the state’s insurance of last resort, the FAIR Plan. The FAIR
+Plan, which provides more bare bones coverage, now insures $650 billion worth of
+property in California, most of it in high-wildfire-risk areas.3
+Whether the new discounts will be effective depends on their size and their ability to
+meaningfully influence mitigation behavior and stabilize the availability of insurance
+in high-risk areas. Many factors make the outcomes uncertain, including the
+complications arising from insurer regulatory constraints, the burdens of compliance
+and verification, and how well homeowners understand the mitigation options and
+costs. In this study, we analyze how insurance companies are complying with the new
+California regulation and the factors that underpin the discounts they offer. We review
+rate filings that insurers have submitted to the California Department of Insurance
+(CDI) to compile detailed information on the precise discounts that individual
+companies are offering for each type of mitigation action.4
+ We merge the discounts
+dataset with zip code-level data on company market shares and premiums and a
+measure of wildfire hazard . We also compare the regulations and the size and types of
+discounts offered with regulations and discounts that apply to wind insurance in other
+states. With this information we address the following questions:
+1. How large are the typical discounts and how much do they vary across insurers
+and by wildfire hazard?
+1 See https://www.insurance.ca.gov/01-consumers/200-wrr/Safer-from-Wildfires.cfm.
+2 See https://www.nfpa.org/education-and-research/wildfire/firewise-usa for more information and Liao et al. (2024) for an analysis of factors that affect participation in the
+program.
+3 FAIR Plan data and statistics available at https://www.cfpnet.com/key-statistics-data/.
+4 Kousky and You (2025) undertook a similar exercise, though they looked at fewer
+insurers and did not calculate average discounts in dollar terms, just percentages. Their
+reported percent discounts are in line with ours.
+Resources for the Future 2
+2. How do the discounts compare with the costs of mitigation investments? In
+other words, do they appear to be enough to provide meaningful incentives for
+homeowners?
+3. How does the program compare with wind insurance discount programs in other
+states? Are there lessons for California to learn as its program matures?
+4. What can we say, at this early stage, about how the mandated discounts are
+likely to affect the supply of insurance in California? Are there potential changes
+to the regulations or complementary policies that could improve outcomes for
+homeowners and communities, while making the insurance industry in California
+more sustainable?
+We find that the discounts are relatively small, particularly for that majority of insurers
+that base discounts on the wildfire portion of the premium and not the full premium.
+Homeowners who live in a Firewise USA community and who undertake all of the
+possible actions that qualify for discounts would receive an annual discount of only
+about $100 on average. When compared with the costs of retrofits, the discounts do
+not appear to be nearly enough, on their own, to motivate homeowners to undertake
+these investments. The insurance discounts offered for investments in wind mitigation
+measures in some coastal and midwestern states appear to be more generous.
+There may be multiple reasons that insurers are offering less generous wildfire
+mitigation insurance discounts in California than wind discounts in other states; in our
+view, two reasons stand out. The first is related to the difference between wildfire risks
+and windstorm risks. Because of how fires spread from structure to structure, wildfire
+damage to a given home is, in part, a function of the characteristics of neighboring
+homes. This externality presents a coordination problem for insurers in high-wildfirerisk areas, a problem that does not exist to the same extent in hurricane-prone
+areas. The second reason for the smaller discounts for wildfire mitigation may be the
+relative lack of knowledge about what works to reduce wildfire risk. Wind damage and
+home-hardening measures to reduce it have been studied for longer and are better
+understood. As wildfire research advances, we expect rate-setting methodologies
+to improve, enabling insurance premiums to more accurately reflect the benefits of
+wildfire hazard mitigation.
+California’s insurance discounts requirements do not operate in a vacuum. The state
+has passed several other new laws in recent years, in an effort to stabilize the market.
+We describe these policies and place the insurance discount requirements in context.
+Two very recent laws may work to reinforce the discounts policy. The first requires
+home sellers to disclose to prospective buyers all the wildfire mitigation features
+of their home, including both defensible space and home hardening measures. The
+second is a new grant program that the state will begin offering to low-income
+homeowners in high-wildfire-risk areas for risk mitigation investments. Similar grant
+programs are in operation in some other states—most offering grants of $10,000 per
+recipient—and have been effective. The state of Alabama has given homeowners $86
+million in grants over the last 13 years for investments in new roofs and other upgrades.
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 3
+2. Wildfire Hazard Mitigation
+Wildfire mitigation strategies at the property level fall into two broad categories: (i)
+hardening the structure by using fire-resistant materials and (ii) reducing the intensity
+of a potential fire around the structure (IBHS 2021). Actions in the first category
+include replacing unrated roof materials or an unmaintained Class C roof with a Class
+A fire-rated roof; closing vents and eaves; using noncombustible materials for walls,
+eaves, and decks; replacing windows with dual-pane, tempered glass; and, to the extent
+possible, making the shape of the building less complex, with fewer angles and corners.
+The second category comprises fuel management through the creation of defensible
+space, which is usually divided into three zones surrounding a home: 0–5 feet, 5–30
+feet, and 30–100 feet. Between 0 and 5 feet from the home, only noncombustible
+materials should be used. In the distances farther away, recommendations are to use
+sparser vegetation and avoid having accessory structures in the area, such as sheds,
+wooden fences, and vehicles.
+Empirical studies of what mitigation strategies make the most difference in whether
+a structure survives a fire are limited but have generally found that structural
+characteristics are more important than defensible space (Syphard and Keeley 2019),
+that reduced vegetation is more important closer to the home than farther away (Platt
+2014; Syphard et al. 2014), and that the spatial pattern of housing development relative
+to vegetation is more important than the amount of local-scale vegetation, with areas
+with low- to medium-density housing in the wildland-urban interface particularly
+at risk (Syphard et al. 2021). In a recent study using damage assessment data from
+five historical fires in California, Zamanialaei et al. (2025) confirm that density of
+development is one of the most important features determining whether structures are
+destroyed. Among structure characteristics, exterior siding was found to be the most
+significant.
+California’s wildfire-resistant building code, Chapter 7a, which has been in effect
+for new construction in high and very high fire hazard severity zones since 2008,
+requires Class A or B roofs, fire-resistant eaves and exterior siding, vents covered by
+a wire mesh, windows and doors that are rated to resist fire for at least 20 minutes,
+noncombustible materials for decks, and defensible space requirements. In an empirical
+study of the effectiveness of the requirements, Baylis and Boomhower (forthcoming)
+find that homes subject to the code are 13 percentage points less likely to be destroyed
+than similar homes built before the code was in effect (a 34 percent reduction from the
+sample mean of 39 percent). The new insurance discounts requirements are part of the
+effort to address problems with older homes, which are not subject to the Chapter 7a
+requirements.
+The Insurance Institute for Business and Home Safety (IBHS) is an independent
+nonprofit organization supported by the insurance industry that conducts building
+science research on natural hazards. The IBHS maintains that using a single strategy
+for mitigation is not effective; a systematic approach that addresses both structure
+features and the ignition zone around the home is necessary to fully protect a home
+(Hedayati, et al. 2023). IBHS operates a Wildfire Prepared Home certification program
+Resources for the Future 4
+that includes several defensible space requirements and home hardening measures.
+The defensible space requirements include a 0–5-foot noncombustible zone around
+the house, a 5–30-foot defensible space, tree and shrub spacing requirements,
+minimum setback distances from the home for propane tanks, and requirements for
+detached structures such as pergolas and sheds. The home hardening measures
+are a Class A fire-rated roof, flame- and ember-resistant vents, 6 vertical inches of
+noncombustible siding applied at ground level, and noncombustible materials for decks
+and other structures 0–5 feet from the house. Homes are certified only if all elements
+are met. A “Plus-Level” IBHS designation has additional requirements, such as enclosed
+eaves, multipaned tempered glass skylights and windows, noncombustible materials
+for gutters and downspouts, noncombustible materials for siding and doors, and no
+detached structures within 30 feet of the home.5
+ California regulators considered
+basing the discounts on combined measures, such as the IBHS requirements, but
+decided it was important to encourage homeowners to take individual actions, rather
+than having to do several potentially costly things to obtain the discounts, which could
+be daunting (Peterson 2025). The regulators were also concerned about potential legal
+challenges from requiring multiple actions.
+3. Insurance Regulations and California
+Reforms
+Homeowner’s insurance in the United States is regulated at the state level. While
+rules vary, most states have some form of rate regulation that tries to strike a balance
+between affordability and industry solvency—that is, to ensure that rates do not
+impose an undue burden on consumers while at the same time allowing insurance
+companies to make enough profit to stay in business (NAIC 1945). In California (as in
+other states), companies are required to submit a rate filing with the state insurance
+office (the CDI) for any change in their rate-setting model or underwriting practices
+and for any rate increase. No rate changes are allowed until approved by the regulator.6
+The CDI typically spends between six months and one year reviewing the filings.
+During this time, the CDI raises any objections or questions and may request clarifying
+data. Insurers respond and modify any proposals as needed until they are approved.
+Several features of California regulations are noteworthy. First, requests for overall
+annual rate increases of 7 percent or higher are subject to in-depth public scrutiny;
+studies have found that this has resulted in most increases lying just below the 7
+percent threshold (Boomhower et al. 2024; Taylor et al. 2025). Second, until recently
+the state did not allow the use of catastrophe models to justify overall rate increases,
+requiring instead that insurers use only historical losses for rate-setting.7
+ Third,
+also until recently, the cost of reinsurance, which insurance companies purchase
+5 See https://wildfireprepared.org/.
+6 In some states, the company does not have to get approval of the increase from the
+regulator; it just has to submit the rate filing.
+7 Insurers are allowed to use catastrophe modeling output as a rating factor to set relative
+rates (i.e., how rates differ from one property to another).
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 5
+to manage their underwriting risks and protect against catastrophes, could not be
+passed through to homeowner’s insurance premiums. The catastrophe modeling and
+reinsurance changes, which took effect in January 2025, are key parts of the state’s
+new Sustainable Insurance Strategy, which aims to address problems with insurance
+availability, stem the tide of enrollments in the FAIR Plan, and provide some stability to
+the California market.8
+ In exchange for these changes, which effectively allow insurers
+to begin setting higher rates, the CDI mandated that insurers increase their writing of
+homeowner’s policies in wildfire-distressed communities by 5 percent every two years
+until policies in these areas are equivalent to at least 85 percent of their statewide
+share of the market.9
+The Safer from Wildfires program, adopted into the state’s regulatory code in
+September 2022, is also part of the overall strategy. Safer from Wildfires requires
+insurers that use wildfire risk in rate-setting to offer discounts for wildfire mitigation
+measures at the property and community level (CDI, 2023). The mitigation measures
+for which insurers are required to provide discounts are listed in Table 1. At the
+8 See https://www.insurance.ca.gov/01-consumers/180-climate-change/Sustainable-Insurance-Strategy.cfm.
+9 This means, for example, that a company with a 10 percent share of the California market
+must write 8.5 percent of its policies in high wildfire risk areas.
+Table 1. Wildfire Mitigation Measures Eligible for Insurance Discounts
+Property level
+Defensible space Home hardening
+Clearing vegetation under decks Class A fire-rated roof
+Clearing vegetation and combustible objects ≤5 feet of
+building Enclosed eaves
+Noncombustible materials only for any portion of home
+improvements ≤5 feet of building Fire-resistant vents
+No combustible structures ≤30 feet of building Multipaned windows or functional shutters
+Compliance with local ordinances related to fuel mitigation ≥6-inch noncombustible vertical clearance at
+bottom of building
+Community level
+Property located in certified Firewise USA community
+Property located in CA Board of Forestry Fire Risk Reduction (FRR) community
+Resources for the Future 6
+property level, they include both defensible space and building-hardening actions; at
+the community level, they refer to the property’s location in either a certified Firewise
+USA community or a California Fire Risk Reduction Community.
+The regulation does not specify the size of the discounts. It requires insurers to file
+a “Rule filing without rate impact” that specifies the discount amounts. Under the
+“without rate impact” rule, the CDI treats the rate impact of the discounts as zero
+and will not approve increases in base rates unless insurers can demonstrate which
+individual policies will receive which discounts. Scott and Alvarado (2023) note
+that this “no rate impact” requirement may erode premiums, as most insurers give
+discounts without increasing their base rates. In our review of rate filings, we found
+that the CDI has only approved base rate offsets in four cases.10 In these cases, insurers
+had already collected data on certain mitigation efforts (e.g. roof type) prior to the
+regulation and therefore could prove which policyholders qualified for a given discount.
+Insurers are also required to disclose the available discounts to policyholders. This
+disclosure must include all the discount factors the insurer has adopted, a description
+of where a policyholder stands in the range of possible discounts based on their
+current policy, and a list of possible actions to make the property safer from wildfires
+and how much money the policyholder can save for each action. Disclosures must also
+state the policyholder’s fire risk score based on whichever risk metric the insurer uses
+and allow the policyholder to appeal the risk score.
+Finally, it is worth noting that California has new real estate disclosure requirements
+that could be complementary to the mandated insurance discount policy. Sellers of
+homes built before 2010 and located in high and very high fire hazard severity zones
+must provide documentation that they are in compliance with defensible space
+restrictions that apply in these areas, and starting in July 2025, must disclose whether
+they have 12 home-hardening features including roofs, vents, and eaves.11 Some
+observers feel that because homebuyers are uneasy about the ability to get insurance
+in high-risk areas, the new disclosure requirements will lead them to push sellers to
+invest in mitigation measures as a condition of sale (Woody 2005).
+4. Discounts in Practice
+We collected and reviewed all rate and rule filings from January 2022 through June
+2025 for the top 25 Property and Casualty insurance groups in California. (See
+Appendix B for details on our procedures.) Table 2 lists the companies and their market
+shares. Property and casualty insurance is a broad category that includes insurance
+to protect physical property from damage as well as insurance to cover liability for
+10 The four cases are: State Farm (File No. 24-426), USAA (File No. 23-1002), Homesite (File
+No. 23-989), and Hartford (File No. 23-1131). In a filing by Travelers (File No. 23-1039), the
+insurer attempted to offset base rates but removed the offsets at the CDI’s request.
+11 The 2010 date is because that is when stricter building codes took effect in high and
+very high hazard areas. Since 1998, sellers have also had to disclose if their home is
+located in a high or very high wildfire hazard severity zone (Ma et al. 2024).
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 7
+Table 2. Top 25 Property and Casualty Insurance Groups by 2022 Market Share
+Company/Group Property/Casualty
+Market Share
+Homeowners Multi-Peril
+Market Share
+State Farm Insurance Group 8.71% 21.22%
+Farmers Insurance Group 7.80% 14.90%
+Mercury General Group 3.60% 6.08%
+Auto Club Enterprises Insurance Group 4.10% 5.10%
+California State Automobile Association (CSAA) 3.64% 6.87%
+Liberty Mutual Insurance Company 4.46% 6.63%
+United Services Automobile Association (USAA) Group 2.70% 5.68%
+Allstate Corporation 5.09% 6.07%
+Travelers Companies, Inc. 4.19% 4.22%
+American Family Insurance Group 1.06% 2.80%
+Chubb Limited 3.59% 2.26%
+Nationwide Mutual Insurance Company 2.44% 2.51%
+Hartford Insurance, Fire and Gas 2.11% 0.90%
+Tokio Marine Holdings, Inc. 1.45% 0.78%
+Zurich Insurance Group 2.04% 0.50%
+Progressive Corporation 2.98% 0.63%
+Markel Insurance Company 0.96% 0.07%
+Kemper Corporation 2.47% 0.41%
+California FAIR Plan Association NA 3.10%
+Total 63.39% 90.73%
+Note: This table displays the top 18 insurance groups in the admitted market in California by market share; these groups
+represent the 25 insurance companies that we examined in the rule and rate filings (along with the FAIR Plan). FAIR = Fair
+Access to Insurance Requirements.
+Resources for the Future 8
+injuries or losses to others. A common product within this category is the homeowner’s
+multi-peril policy, also known as the HO-3 policy, which is the standard homeowner’s
+insurance policy in the United States.
+Most insurers assign discounts on a percentage basis to individual mitigation
+efforts and then either add or multiply them when multiple actions are taken. Three
+insurers include an additional bonus discount for multiple mitigation actions. Nine
+insurers include discounts for complying with the IBHS Wildfire Prepared Home
+or Wildfire Prepared Home Plus standard. These standards require that multiple
+mitigation measures be implemented together as an integrated package, rather than
+as individual, standalone actions.12 Six insurers specify a maximum total discount;
+for the remaining insurers, we compute the maximum by following their stacking
+formula and incorporating any bonus discounts. A few insurers set their discounts
+in more idiosyncratic ways. For example, one sets dollar discount amounts ranging
+from $1 to $10, for a maximum of $30. Another gives a 1 percent discount for the first
+six mitigation efforts, then 2 percent for the next five, and 3 percent for the last one,
+undertaken in any order. Six insurers apply discounts to their overall premium; the rest
+apply discounts only to a “wildfire” portion of the premium. We take all these factors
+into account in creating our discount database and in calculating average discounts
+across insurers.
+Notably, Safer from Wildfires requires discounts only from insurers that incorporate
+wildfire risk explicitly when calculating their premiums. Three insurers in the state,
+presumably in response to the new requirements, moved away from using wildfire risk
+in their rating process and thus offer no discounts.
+Insurers were required to file their discounts by April 12, 2023. As of November 2025,
+the top 20 insurers by market share had discounts in place (or had removed wildfire
+risk from their rating procedures).
+4.1. The Magnitude and Range of Discounts
+Table 3 shows the average discount percentages for each mitigation action and the
+range across the 25 insurers that belong to the top 18 groups. We group insurers
+that discount their entire premium and those that discount only the wildfire portion
+and take the averages for each. Averages are calculated as weighted averages using
+statewide insurer market shares.
+Table 4 reports the corresponding average dollar discounts, which we estimate by
+applying the discount percentages to the corresponding average premium of each
+insurer, then calculating a weighted average using statewide market shares of the
+companies.13 For insurers that discount based on the full premium, we use each
+12 Because the IBHS standards are inclusive of the individual mitigation actions, most
+insurers that offer the IBHS discount apply that in lieu of the individual discounts when a
+homeowner meets the IBHS requirements.
+13 Appendix Table A1 shows discounts offered by the FAIR Plan (which are not included in
+the averages in Table 4).
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 9
+insurer’s percentage discount and multiply it by that company’s average premium;
+we then calculate a weighted average discount across all companies using each
+company’s market share as weights. For insurers that discount based on the wildfire
+portion of the premium, we include an additional step. We multiply the wildfire share
+of the base rate for each company by that company’s statewide average premium
+to obtain an estimated wildfire-only premium; we then calculate a weighted average
+across all companies using market shares. An important caveat is that our estimates
+are based on the share of the base rates that is wildfire related, not the full premium,
+which we do not have data on. While this may result in an underestimation of discounts
+in high hazard areas, this back-of-the-envelope exercise provides a reasonable
+estimate of the dollar discounts.
+A few findings from Tables 3 and 4 are notable:
+1. Of all the individual items at the property level, roofs matter most. On average,
+across the 25 companies, a Class A fire-rated roof provides a far larger discount,
+in percentage and dollar terms, than any other single item.
+2. For defensible space actions, larger discounts are given for clearance closest to
+the home, 0–5 feet, than for farther away.
+3. Many insurers apply the same percent discount to different mitigation options,
+especially among the home-hardening options. Enclosed eaves, fire-resistant
+vents, multipaned windows, and vertical clearance all average a 0.3 percent
+discount, with the same low end of 0.1 percent. This is the case because
+companies tend to give the same discount for each of these items, even though
+the actions might vary in their actual risk-reduction effectiveness.
+4. A homeowner who carries out all of the property-level mitigations, both
+defensible space and home hardening, will get a maximum discount of 5.65
+percent, or approximately $98 for an average policy, if they have an insurer that
+discounts based on the full premium (first two columns of each table). If their
+insurer discounts based on the wildfire portion of the policy (column 2 in Table 4),
+the maximum discount averages only $54.
+5. Insurers that use the IBHS Wildfire Prepared Home program to set discounts
+provide an average discount of approximately $60 for the standard certification
+and $94 for the “Plus-level” certification. Interestingly, the discount for Plus-level,
+which includes enclosed eaves, multipaned tempered windows, noncombustible
+materials for gutters, siding, and doors, and other requirements beyond the
+standard certification, is roughly equivalent to the maximum discount for doing all
+individual items when companies base their discount on the whole premium.
+6. Being in a Firewise USA community is valuable, providing an average discount of
+between $32 and $46, which is more than any single property-level action.
+7. When community-level discounts (Firewise and Forestry Fire Risk Reduction
+(FRR) communities) are combined with the individual property discounts, the
+average statewide maximum discount for insurers that apply the discount to the
+overall rate is 13.15 percent, which translates to a statewide average of $215.78.
+Insurers that discount only the wildfire portion of their premium provide an
+average 16.66 percent discount, which is only $101.52, less than half the maximum
+discount for insurers that base discounts on the total premium.
+Resources for the Future 10
+Table 3. Insurance Discount Percentages, by Mitigation Action: Average and Range
+Across Insurers
+Full Premium Discounts Wildfire Premium Discounts
+Effort Average Range Average Range
+Defensible Space
+30-ft Noncombustible Structure 0.31% 0.10%–2.50% 0.73% 0.20%– 2.50%
+5-ft Clearance 0.84% 0.50%–1.00% 0.72% 0.20%–1.50%
+5-ft Noncombustible Material 0.54% 0.50%–1.00% 0.72% 0.20%–1.50%
+Local Ordinance Compliance 0.56% 0.10%–5.00% 0.97% 0.20%–5.00%
+Under Deck Clearance 0.30% 0.10%–1.00% 0.72% 0.20%–1.50%
+Building Hardening
+Class A Fire Rated Roof 1.88% 0.50%–5.00% 1.05% 0.20%–5.00%
+Enclosed Eaves 0.30% 0.10%–1.00% 0.55% 0.20%–5.00%
+Fire-Resistant Vents 0.30% 0.10%–2.00% 0.67% 0.20%–25.00%
+Multi-Pane Windows 0.32% 0.10%–5.00% 0.56% 0.20%–5.00%
+Vertical Clearance 0.30% 0.10%–1.00% 0.53% 0.20%–1.00%
+IBHS
+IBHS Wildfire Plus 6.33% 0.00%–26.00% 9.61% 1.00%–15.00%
+IBHS Wildfire Prepared Home 3.84% 0.00%–17.50% 6.19% 1.00%–10.00%
+Maximum Property
+Combined Property Level 5.65% 4.20%–24.50% 7.88% 2.00%–37.00%
+Community
+FRR Community 0.30% 0.10%–2.00% 0.56% 0.10%–2.00%
+Firewise 2.86% 1.00% – 5.00% 6.26% 0.50%–20.00%
+Maximum (Property and Community)
+Maximum Discount 13.15% 9.40%–31.50% 16.66% 9.80%–60.00%
+Note: The averages in the table are weighted by insurer statewide market shares. IBHS = Insurance Institute for Business and
+Home Safety; FRR = Forestry Fire Risk Reduction.
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 11
+Table 4. Average Discounts in US Dollars, by Mitigation Action
+Effort Full Premium
+Discounts
+Wildfire Premium
+Discounts
+Defensible Space
+30-ft Noncombustible Structure $5.83 $5.07
+5-ft Clearance $13.98 $4.70
+5-ft Noncombustible Material $9.05 $4.70
+Local Ordinance Compliance $10.15 $6.90
+Under Deck Clearance $5.10 $4.70
+Building Hardening
+Class A Fire Rated Roof $31.38 $7.61
+Enclosed Eaves $5.10 $4.21
+Fire-Resistant Vents $5.59 $5.33
+Multi-Pane Windows $7.04 $4.98
+Vertical Clearance $5.10 $4.02
+IBHS
+IBHS Wildfire Plus $94.80 $93.65
+IBHS Wildfire Prepared Home $56.87 $61.67
+Maximum Property
+Combined Property Level $98.33 $54.07
+Community
+FRR Community $5.59 $4.46
+Firewise $46.49 $31.52
+Maximum (Property and Community)
+Maximum Discount $215.78 $101.52
+Note: The averages in the table are weighted by insurer statewide market shares. IBHS =
+Insurance Institute for Business and Home Safety; FRR = Forestry Fire Risk Reduction.
+Resources for the Future 12
+Percentage discounts under the FAIR Plan (see Appendix A) generally fall within the
+range of those in the private market. The overall pattern is similar across action items:
+limited variation across individual property-level measures, with larger incentives for
+implementing multiple actions and for community-level mitigation.
+Figure 1 shows the distribution of policies across the range of maximum dollar
+discounts insurers are offering, weighted by the number of policies written in 2022.
+The orange bar shows the number of policies that get no discount (because they are
+offered by companies that stopped using wildfire risk to set rates). This amounts to
+over 500,000 policies, a sizeable number. The blue bars are the policies offered by
+companies that base their discounts on total premiums and the red-colored bars are
+those that use the wildfire portion of the premium. Consistent with Table 4, the figure
+shows that the dollar discounts for companies that discount the total premium instead
+of only the wildfire portion provide more generous discounts. The figure also highlights
+that most policyholders—holding 90.5 percent of the nearly 4.8 million policies—would
+be eligible for a maximum discount of less than $200, and many discounts are well
+under $100 (especially those from insurers that discount only the wildfire portion of
+the premium).
+Figure 1. Distribution of Dollar Discounts
+0 200 400 600
+Maximum Dollar Discount (Insurer Average)
+Number of Policies (Million)
+0.5
+1.0
+1.5
+Portion Discounted
+No Discount Total Wildfire
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 13
+4.2. Variation in Wildfire Risk and Discounts
+Across California
+Insurers offer percentage discounts that are fixed throughout the state.14 However,
+because premiums reflect underlying asset exposure and risks and thus vary by
+location, the dollar value of mitigation discounts can vary significantly across the state.
+Figure 2 shows the distribution of average premiums charged by insurers across
+wildfire risk categories premiums by wildfire risk quintile.15 For each risk level, the
+box represents the interquartile range (IQR), spanning the 25th to 75th percentiles of
+insurer premiums, and the horizontal line inside each box indicates the median. Vertical
+whiskers extend to the highest and lowest values within 1.5 times the IQR, illustrating
+the spread of typical premium variation across insurers. Outliers beyond this range
+are suppressed for clarity. The solid point in each box denotes the mean premium. In
+general, average premiums increase with risk level. In the highest-risk zip codes, the
+average premium is $2,145, compared with only $1,120 in the lowest-risk zip codes. The
+range in premiums is also greater in the higher-risk areas.
+14 The one exception is Allstate, which defined two tiers of discounts depending on insurer-defined territory. For our computations, we use the higher tier of discounts.
+15 We measure wildfire risk using the risk score from CDI’s Wildfire Risk Reporting, which
+represents insurance policy-weighted wildfire exposure
+Figure 2. ZIP-Code-Level Insurance Premiums, by Wildfire Risk Level
+1,000
+2,000
+3,000
+Very Low Low Medium High Very High Overall Average
+Risk Level
+Premium
+2,500
+3,500
+1,500
+Resources for the Future 14
+Figure 3 shows a map of zip-code-level premiums and wildfire risk. The left-hand panel
+shows the weighted average zip-code-level insurance premiums grouped into quintiles,
+and the right-hand panel shows the wildfire risk quintiles. The side-by-side maps
+highlight that premiums at the zip code level are highly correlated with wildfire risk.
+Most of the zip codes with the highest risk (shown in dark red) are in the two highest
+quintiles for premiums (medium and dark blue). This correlation partly reflects higher
+premiums in areas with elevated wildfire risk but may also stem from the concentration
+of higher-value homes in those same high-hazard locations. This pattern is most
+evident in coastal areas, where home values are systematically higher (see Figure A1
+for zip-code-level median home values). In contrast, many inland high-risk areas do not
+exhibit similarly high property values, even though premiums are still elevated.
+Figure 4 shows maps of the maximum mitigation discounts by zip code, with the lefthand panel showing discounts in dollars and the right-hand panel in percentages; the
+discounts are weighted by insurer market share in the zip code. The dollar discounts
+largely mirror variation in premiums, thus the left-hand map in Figure 4 looks similar to
+the left-hand map in Figure 3. However, the percentage discount map on the right-hand
+panel tells a different story. The zip codes that show the highest percentage discounts
+(indicated by blue and dark blue) are those where a greater share of the market is
+held by insurers that offer relatively larger percentage discounts (>15 percent). These
+are often not the same zip codes as those with higher premiums and higher risks.
+This indicates that the strength of the mitigation incentive a homeowner receives
+Figure 3. ZIP-Code-Level Insurance Premiums (Left) and Wildfire Risk (Right), by
+Quintile
+Risk Quintile (Q)
+Q1
+Q2
+Q3
+Q4
+Q5
+Not applicable
+Average Premium Quintile
+$347–$1,170
+$1,170–$1,450
+$1,450–$1,870
+$1,870–$2,350
+Over $2,350
+Not applicable
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 15
+may be driven more by which insurers are writing policies in that zip code rather than
+local hazard conditions. Specifically, it matters whether the zip code is mainly served
+by insurers that discount based on the full premium or only on the wildfire portion.
+Other unobserved factors that determine insurers’ general appetites for incentivizing
+policyholder risk reduction are also at play.
+Figure 4. ZIP-Code-Level Maximum Discounts in Dollars (Left) and Percentages (Right),
+by Quintile
+Discount Quintile
+$2–$86
+$86–$115
+$115–$148
+$148–$198
+Over $198
+Not applicable
+Percentage Discount
+8%–11.8%
+11.8%–12.8%
+12.8%–13.7%
+13.7%–15%
+Over 15%
+Not applicable
+Resources for the Future 16
+In Figure 5, we further examine whether insurers’ mitigation discounts vary
+systematically with their exposure to high-risk areas and their rate-setting approach.
+The figure plots each insurer’s maximum percentage discount against the share of
+their policies located in zip codes classified as “high” or “very high” wildfire risk. We
+distinguish between insurers that apply discounts to the full premium (shown in blue),
+those that discount only the wildfire portion of the premium (shown in red), and those
+that neither price for wildfire risk nor face discount requirements (shown in orange).
+Among insurers that discount the full premium, the relationship between discount size
+and high-risk market share is essentially flat, indicating no clear pattern in discount
+generosity across insurers with different levels of wildfire exposure. In contrast, among
+insurers that discount only the wildfire portion of the premium, discount sizes increase
+with the insurer’s share of high-risk policies. These insurers offer larger incentives
+where they face greater wildfire exposure, consistent with the idea that firms with more
+at stake may be more interested in encouraging risk reduction among policyholders or
+in attracting lower-risk customers within high-risk areas. The last category of insurers,
+who largely disregard wildfire risk in pricing, tend to write a smaller share of policies in
+high-risk areas.
+Figure 5. Premium Discounts and Market Share in High-Wildfire-Risk Area
+20
+40
+60
+20 30 40 50 60
+High Risk Market Share (%)
+Maximum Mitigation Discount (%)
+Rate Regime
+No Discount Total Wildfire
+50
+30
+10
+10 15 25 35 45 55
+–10
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 17
+4.3. Are the Discounts Enough?
+The discounts are intended to incentivize homeowners to invest in wildfire hazard
+mitigation. An important question is whether they are large enough to do that. Table
+5 shows estimates of the costs of mitigation measures according to a study by
+Headwaters Economics, a nonprofit economics research organization (Barrett and
+Quarles 2025). The first row shows average costs of retrofitting a home with a Class A
+fire-rated roof, fire-resistant vents and windows, and defensible space near the home,
+as well as the combined cost for taking all actions necessary for adequate wildfire
+resistance.16 The estimated costs are for a prototypical 2,000-square foot, two-story
+single-family home located on a 15- to 20-degree slope with wildland vegetation to the
+rear of the house and adjacent structures within 30 feet (as in a suburban setting).
+The costs of the retrofits are one-time up-front costs, so they cannot be directly
+compared to the insurance discounts, which are offered annually. A typical roof will
+last about 25 years; using the $6,300 up-front cost for a new Class A fire-rated roof
+and a 3 percent discount rate yields an annualized cost of $360—more than 10 times
+the average discount of $31.38 that insurers are offering for such roofs. If doing all
+combined retrofits costs $40,000, the approximate mid-point of the Headwaters
+Economics estimates, this annualizes to just under $2,300 (assuming a 25-year life and
+3 percent discount rate), also approximately 10 times the average insurance discount
+of $215.78. The discounts for vents and windows are similarly low relative to costs,
+especially for replacing all vents and windows in a home.
+16 The study includes other options; we selected the four items for illustrative purposes
+and for comparison with the measures used for insurance discounts.
+Table 5. Costs of Mitigation and Average Insurance Discounts
+All
+combined
+Class A Firerated roof
+(1,000 square
+feet)
+Fire-resistant
+vents for
+enclosed
+eaves
+Double-paned
+tempered
+glass windows
+0–5 feet
+defensible
+space (6 cubic
+yards gravel)
+Headwaters Economics cost
+estimate
+$23,000–
+$60,000 $6,300 $106 per vent $1,200 per
+window $2,782
+Average insurance discounta $215.78 $31.38 $5.59 $7.04 $13.98
+a
+ Estimated average maximum discount for insurers that base percentage discounts on full premium; insurers that
+base discount on wildfire-only portion of premium offer lower discounts in dollar terms (see Table 4).
+Resources for the Future 18
+5. Lessons from Other States
+Table 5 suggests that insurers are offering only modest discounts to policyholders in
+comparison with the cost of retrofits. This led us to investigate what kinds of insurance
+discounts are being offered in other states for hazard mitigation actions and how those
+compare in size with the discounts being offered in California.
+5.1. Insurance Discounts in Other States
+Insurance companies operating in several other states, namely those in hurricaneprone regions and some in the Midwest, offer discounts for storm mitigation
+investments. Table 6 shows the policies in place in nine states that have mandatory
+requirements for discounts. Most of the states, like California, allow the insurance
+companies to set the size of the discount, though several have language in their
+legislation that the discounts must be actuarially justified. Alabama’s regulations state
+that the discounts should range from 20 percent to 60 percent, applied to the wind
+or hurricane portion of the insurance premium, and granted for achieving the IBHS
+FORTIFIED home standards. According to Awondo et al. (2023), the wind portion of
+the premium for coastal homes in Alabama accounts for approximately 80 percent
+of the total premium. Four other states use FORTIFIED as the basis for the discounts;
+the remaining states either list specific mitigation measures (like California) or simply
+state that retrofits should reduce losses. In the states not using FORTIFIED, a home
+inspection is often required to certify that the improvements have been made. Six of
+the nine states have a grant program, with most providing up to $10,000 per recipient.
+Table 6. Insurance Discount Requirements in Selected States
+State Insurance Discount Policy Size of Discounts Additional mitigation policies
+Wind and hurricane discounts
+Alabama Discounts for meeting IBHS
+FORTIFIED standards
+20%–60% discount
+(established in the law)
+applied to wind or hurricane
+portion of insurance premium;
+range based on four levels of
+FORTIFIED
+State grant program: up to
+$10,000 per recipient for new
+roof and other upgrades
+Florida
+Discounts must be offered
+when “fixtures or construction
+techniques demonstrated to
+reduce the amount of loss in a
+windstorm have been installed
+or implemented.” (Florida
+Statute 627.0629(1))
+Insurers set discount amounts;
+applied to wind/hurricane
+portion of premium. Range is
+6%–44% for roof covering, rootto-wall anchors, secondary
+water resistance for roof, and
+shutters (Florida Division of
+Emergency Management n.d.)
+State matching grant program:
+$2 for every $1 homeowner
+spends, up to $10,000. Financing
+through property tax system
+(PACE program); state sales
+tax exemption on windows and
+doors
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 19
+Georgia Discounts for meeting IBHS
+FORTIFIED standards
+Insurers set discount amounts,
+which must be actuarially
+justified
+Louisiana
+Discounts for (i) upgrading to
+comply with Louisiana State
+Uniform Construction Code;
+(ii) installing improvements
+that “are proven to reduce
+windstorm or hurricane
+damage”; and (iii) meeting
+IBHS FORTIFIED standards
+Insurers set discount amounts.
+Range across companies
+is 1%–15% on wind portion
+of premium (Louisiana
+Department of Insurance
+2025); the 15% is for meeting
+Uniform Construction Code
+Income tax deduction up to
+$5,000; state sales and use tax
+exemptions on storm shutters
+Maryland
+Discounts for storm loss
+mitigation improvements when
+licensed contractor inspects
+the work
+Insurers must offer at least one
+actuarially justified premium
+discount; insurers set discount
+amount
+Minnesota
+Discounts for meeting IBHS
+FORTIFIED standards; required
+only for policies that include
+wind coverage
+Insurers set discount amounts,
+which can be based on the
+wind portion of the premium
+or total premium and must be
+actuarially justified
+State grant program: up to
+$10,000 per recipient (law
+passed in 2023; program to
+launch with first grants in 2026)
+Mississippi
+Discounts in coastal counties
+for meeting IBHS FORTIFIED
+standards
+Insurers set discount amounts;
+most are 15%–30% (Chaney
+2024)
+State grant program: up to
+$10,000 per recipient
+North
+Carolina
+State law requires the NC
+Rate Bureau to file insurance
+premium credits that insurers
+must offer in 18 coastal
+counties for buildings
+that resist hurricanes and
+windstorms
+Approximately 4%–5% discount
+on wind/hail portion of
+premium for individual items,
+up to 9%–10% total discount
+(Coastwatch 2018; North
+Carolina Sea Grant 2018 );
+4%–6% discount for IBHS
+FORTIFIED standards
+NC Insurance Underwriting
+Association grant program for
+residents of beach communities:
+up to $10,000 per recipient for
+FORTIFIED roofs
+Oklahoma
+Discounts must be offered
+when insurer determines
+that the premium discount is
+actuarially justified and there
+is credible evidence of cost
+savings; discounts also offered
+for IBHS FORTIFIED homes
+Insurers set discount amounts,
+based on wind/hail portion of
+premium. Across 11 companies,
+discounts for FORTIFIED
+homes range from 3% to
+42% (Oklahoma Insurance
+Department 2025)
+State grant program: up to
+$10,000 per recipient for
+FORTIFIED roofs
+South
+Carolina
+Discounts for homes in coastal
+areas for IBHS FORTIFIED
+homes, SC Safe Home
+Program, International Building
+or International Residential
+Code; discounts also possible
+for individual fixtures and
+construction techniques
+Insurers set discount amounts
+but must demonstrate a
+correlation between the
+reduction in premium and the
+reduction in risk associated
+with the mitigation measures
+Matching (capped at $6,000)
+and non-matching (capped
+at $7,500) grant program for
+coastal homeowners. Income
+tax credits of 25% of mitigation
+costs up to $1,000; tax credit
+up to $1500 against sales
+tax on materials. Tax-exempt
+Catastrophe Savings Accounts.
+Resources for the Future 20
+Alabama is often held up as a leader in homeowner investments in storm mitigation.
+The state’s insurance discount requirements have been in place longer than most other
+states, starting in 2009. Alabama is also the only state where the percentage discount
+amounts are included in the regulations, and at 20 to 60 percent, they are sizeable in
+comparison with insurer offerings in other states. Awondo et al. (2023) estimate that an
+average homeowner in Alabama would see a premium reduction of between $366 and
+$915 per year. These amounts appear to be large enough, in many cases, to justify the
+costs of retrofitting to achieve FORTIFIED levels, which have been estimated at 1 to 3
+percent of the value of a home (Ghosh et al. 2023; Gould 2020).17 A recent study found
+that FORTIFIED homes in Alabama had 55 percent to 74 percent lower claim frequency,
+14 percent to 40 percent lower claim severity, and 51 percent to 72 percent lower loss
+ratios after a 2020 hurricane than similar non-FORTIFIED homes (ALDOI and CRIR
+2025).
+In addition to the insurance discounts, Alabama has had a grant program in place since
+passage of the Strengthen Alabama Homes Act in 2011. The program has awarded
+approximately $86 million in grants to homeowners since its inception and funded
+roughly 8,700 retrofits (Angueira 2025). According to Ghosh et al. (2023), Alabama
+accounts for 82 percent of the estimated 37,000 FORTIFIED homes in the United
+States.18 Many other states have established similar grant programs, and the California
+Safe Homes Act, which passed in October 2025, will set up a wildfire mitigation
+grant program for low-income policyholders living in high and very high fire hazard
+severity zones. Grant funds are to be used for replacing roofs and creating a 5-foot
+noncombustible zone around structures, as well as for communitywide mitigation
+investments that will provide benefits to insurance policyholders.
+In other states with discount policies, insurers set the discount percentages. We did not
+examine rate and rule filings in these states as we did for California. However, we were
+able to find some information in various reports and studies, often published by state
+insurance offices, on the typical range of incentives offered. Information for Florida,
+17 As an example, a home worth $400,000 would cost approximately $8,000 to retrofit to
+achieve FORTIFIED levels; when annualized (using a 3% discount rate over 25 years), this
+cost is $459, which seems to be roughly in line with the evidence on insurance discounts
+from Awondo et al. (2023).
+18 The next-largest number is in North Carolina, which accounts for 14 percent of the US
+total.
+Wildfire discounts
+Colorado
+Starting in July 2026, insurers
+that use wildfire risk for ratesetting must provide discounts
+for IBHS Wildfire Prepared
+Home certification and for
+community mitigation actions
+Insurers set discount amounts,
+which must be actuarially
+justified; must post discounts
+on their websites
+Income tax credit; Wildfire
+Resilient Homes Grant Program
+(very small, only $100,000
+available for entire state in first
+year)
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 21
+Louisiana, Mississippi, North Carolina, and Oklahoma generally shows a wide range in
+the discount percentages across companies and across states. The upper end of the
+ranges, however, tend to be higher than what we have found for wildfire mitigation
+discounts in California.
+5.2. Why Are California’s Wildfire Mitigation
+Discounts Relatively Small?
+There are several potential reasons that wildfire mitigation discounts in California are
+currently smaller than discounts for wind mitigation measures. We offer six possible
+explanations.
+1. Early Stage. Wildfire mitigation discounts are still in their infancy. Insurers and
+regulators are experimenting with how such discounts should be structured,
+which is reflected in the lack of specificity in California’s regulatory requirements
+and in the relatively conservative initial discount levels. In contrast, wind
+mitigation incentives have evolved over many years in hurricane-prone states.
+Correspondingly, several states require that wind mitigation discounts be
+actuarially justified, and Alabama goes further by specifying allowable ranges.
+2. Data Gaps. Insurers may lack reliable information on which properties have
+particular wildfire mitigation features, as such information is not likely to have
+been systematically collected in the past. Some measures, such as maintaining
+defensible space, also require regular monitoring, which increases uncertainty.
+In contrast, FORTIFIED roofs are durable, one-time upgrades that are easy to
+observe and document through IBHS certification procedures, permitting, and
+inspection records.
+3. Knowledge Gaps. While research on home hardening and defensible space
+is advancing, there remains uncertainty about the total expected losses each
+specific measure reduces in a wildfire event across different environments. This
+is evidenced by the different approaches insurers have taken to combining
+discounts across actions, and the lack of differentiation of discounts for individual
+measures. By comparison, the performance of FORTIFIED roofing systems under
+wind loads has been more extensively studied and is better understood.
+4. Spillovers and Collective Action Problems. Wildfire loss reductions often
+depend on neighboring properties and broader landscape conditions. Benefits
+from mitigation may be shared across properties, but insurers only underwrite the
+individual home. This externality may make it harder to calibrate discounts. This
+concern is lower for wind-related risks, which are more property-specific.
+5. Uncertainty About How Discounts Influence Behavior. Mitigation measures
+for wildfire risk have historically been adopted at relatively low rates. Insurers
+may therefore be uncertain about the extent to which premium discounts alone
+can motivate homeowners, given the substantial upfront costs and ongoing
+maintenance associated with many wildfire mitigation actions. In practice,
+discounts could end up functioning more as a transfer to those who have already
+mitigated rather than as a strong incentive for new investment. By contrast,
+Resources for the Future 22
+wind mitigation efforts have often been supported by state grant programs
+and standardized retrofit protocols, which can help address these barriers and
+support wider adoption.
+6. Regulatory Constraints. Regulatory environments differ across states and across
+perils. In some states, insurers can charge higher rates once they have filed a
+rate request rather than having to wait for regulator approval. In California, on
+the other hand, evidence suggests that base rates may already be limited below
+actuarially indicated levels. When rates are constrained, there is inherently less
+room to offer larger discounts.
+We offer this list as likely explanations but more investigation into insurer decisions
+about discount amounts is called for. Addressing the challenges that currently limit
+the size and consistency of wildfire mitigation discounts will likely require coordinated
+efforts across regulators, insurers, and communities. The following interventions might
+help address some of the barriers discussed above and encourage discounts that are
+more economically meaningful:
+1. Clearer standards from regulators, such as ones specifying how mitigation
+actions should be evaluated, how discounts should relate to expected loss
+reductions, and how insurers should document their actuarial basis, could
+improve consistency of the discounts across insurers.
+2. Better information on mitigation actions is essential for implementing the
+discounts. State or local governments could centralize information such as
+inspection results and permitting records into standardized, accessible formats
+for all insurers. One example that could be used as a model is the CAL FIRE
+defensible space inspections database, which provides property-level data
+collected from CAL FIRE inspections.19
+3. Experimental, empirical, and engineering studies would help generate more
+precise estimates of the effectiveness of individual mitigation measures under
+different conditions. These can be promoted through targeted funding and by
+facilitating the public sharing of findings.
+4. Closer coordination between insurers and communities could help overcome
+the collective action problem. Community-level fuel treatments and code
+enforcement can make it easier for insurers to justify more substantial discounts.
+State leadership to facilitate this kind of collaboration would be worthwhile.
+5. With a better understanding of how homeowners respond to financial incentives,
+including evaluations of California’s new grant program, policymakers could
+design incentives that more effectively motivate new mitigation investments
+rather than rewarding actions already taken.
+6. As discussed in Section 3, California’s recent reforms expand the use of
+forward-looking catastrophe models so that risk can be more accurately priced.
+Regulatory changes along these lines could provide a stronger foundation for
+offering larger, actuarially sound discounts.
+19 See https://experience.arcgis.com/experience/5150c87770ac4970bbdb2fbe7a75bd66/page/Dashboard/.
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 23
+6. Conclusion
+Our review of insurance rate filings indicates that the sizes of the discounts for wildfire
+mitigation currently offered by insurance companies in California are unlikely to be
+large enough, on their own, to motivate homeowners to undertake most of these
+costly investments. Although there is some variation in the discounts across insurers,
+none of them appear to be offering discounts large enough to cover the cost of roof
+replacements and other home hardening measures. The largest difference across
+insurers depends on whether the discount is based on the wildfire portion of the
+premium or the whole premium. For insurers that base the discount only on the wildfire
+portion, which is 18 of the 22 insurers offering discounts, the average dollar discount is
+small, maxing out at roughly $100 for homeowners who take advantage of all possible
+actions.
+We offered six reasons that the discounts are relatively small. The most important of
+these are related to the nature of wildfire risk and the characteristics of the insurance
+marketplace. Most fires spread as a result of structure-to-structure ignitions from
+flying embers. A homeowner may invest in mitigation measures, but unless their
+neighbor does likewise, they may not fully benefit from those investments. With
+different insurance companies operating in a neighborhood, each company may be
+offering discounts that reflect the benefit of a single home undertaking mitigation
+assuming surrounding homes do not. Ideally, all homes in a neighborhood would, for
+example, have Class A fire-rated roofs, but the coordination to make this happen is
+challenging. In addition, community investments in hazard mitigation through creation
+of fuel breaks, vegetation management, fuels treatment, and more are also critical
+for lowering risks, and for solving the coordination problem, but state government
+programs to encourage local governments to act are needed; insurance companies are
+unlikely to address this problem on their own.
+It is too early yet to say whether the policy will incentivize homeowners to invest in
+mitigation and/or improve the functioning of California’s insurance market by reducing
+the number of nonrenewals and stemming the tide of enrollment in the FAIR Plan.
+Outcomes in other states and some scholarly research lead us to conclude that the
+new grant program and disclosure requirements may be highly complementary to
+the insurance discounts policy, improving overall insurance market outcomes and
+lowering wildfire risk. Additional research that evaluates the policy as it matures will be
+important.
+Resources for the Future 24
+References
+ALDOI and CRIR (Alabama Department of Insurance and Center for Risk and Insurance
+Research – University of Alabama). 2025. Performance of IBHS FORTIFIED HomeTM
+Construction in Hurricane Sally. May 5. https://aldoi.gov/PDF/News/PerformanceIBHSFortifiedHomeConstructionHurricaneSally.pdf.
+Angueira, Gabriela Aoun. 2025. Alabama Study Shows Fortified Homes Paying Off for Insurers, Homeowners. Insurance Journal. May 28. https://www.insurancejournal.com/news/
+southeast/2025/05/28/825141.htm?.
+Awondo, Sebastain, Harris Hollans, Lawrence Powell, and Chip Wade. 2023. Estimating the
+Effects of Wind Loss Mitigation on Home Value. Southern Economic Journal 90: 71–89.
+Barrett, Kimiko, and Stephen L. Quarles. “Retrofitting Homes: Cost of Mitigation Strategies for
+Improved Wildfire Resistance.” Fire and Materials 49, no. 5 (2025): 762-775.
+Baylis, Patrick, and Judson Boomhower. Forthcoming. Mandated vs. Voluntary Adaptation
+to Natural Disasters: The Case of U.S. Wildfires. Journal of Political Economy. Preprint
+available at https://www.patrickbaylis.com/pdf/buildingcodes-preprint.pdf.
+Boomhower, Judson, Meredith Fowlie, Jacob Gellman, and Andrew Plantinga. 2024. How Are
+Insurance Markets Adapting to Climate Change? Risk Classification and Pricing in the
+Market for Homeowners Insurance. NBER Working Paper No. w32625. July. https://www.
+nber.org/papers/w32625.
+CDI (California Department of Insurance). 2023. Prior Approval Rate Application Requirements to Comply with Title 10 of the California Code of Regulations, Section
+2644.9(d). Bulletin 2023-2. https://www.insurance.ca.gov/0250-insurers/0300-insurers/0200-bulletins/bulletin-notices-commiss-opinion/upload/Bulletin-2023-2.pdf.
+Chaney, Mike. 2024. Mitigation Program Funded by Legislature. Mississippi Department
+of Insurance Press Release. May 21. https://www.mid.ms.gov/wp-content/uploads/2024/05/Pressrel052124.pdf.
+Coastwatch. 2018. Wind Damage? Check Insurance Incentives When Making Repairs. North
+Carolina Sea Grant. https://ncseagrant.ncsu.edu/coastwatch/wind-damage-check-insurance-incentives-when-making-repairs/.
+Florida Division of Emergency Management. n.d. Florida’s Foundation, Make Mitigation
+Happen. https://www.floridadisaster.org/globalassets/importedpdfs/wind-mitigation-booklet-.pdf.
+Ghosh, Somik, Ben Bigelow, Alexander Smith, and Olayinka Omole. 2023. A Cost-Benefit Analysis of FORTIFIEDTM Home Designation in Oklahoma. Cityscape 25(1): 303–314.
+Gould, Leslie. 2020. The Effect of FORTIFIED Home Designation on Property Value. Theses
+and Dissertations. 4348. https://scholarsjunction.msstate.edu/td/4348.
+Hedayati, Faraz, Stephen Quarles, and Steven Hawks. 2023. Wildland Fire Embers and Flames:
+Home Mitigations That Matter. Insurance Institute for Business and Home Safety (IBHS)
+Research. April. https://ibhs1.wpenginepowered.com/wp-content/uploads/Home-Mitigations-that-Matter-FINAL.pdf.
+Insurance Institute for Business and Home Safety (IBHS). 2021. Suburban Wildfire Adaptation
+Roadmaps: A Path to Coexisting with Wildfires. https://ibhs.org/wp-content/uploads/
+member_docs/ibhs-suburban-wildfire-adaptation-roadmaps.pdf.
+Kousky, Carolyn, and Xuesong You. 2025. Do California Insurers Reward Wildfire Resilience?
+Insurance for Good Blog. Nov. 4. https://www.insuranceforgood.org/blog/do-ca-insurers-reward-wildfire-resilience.
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 25
+Liao, Yanjun (Penny), Simon Sølvsten, and Zachary Whitlock. 2024. From Catastrophe to
+Caution: The Effect of Wildfires on Community Hazard Mitigation Investments. RFF
+Working Paper 24-25 (December). https://www.rff.org/publications/working-papers/
+from-catastrophe-to-caution-the-effect-of-wildfires-on-community-hazard-mitigation-investments/.
+Louisiana Department of Insurance. 2025. Wind Mitigation Discounts. September. https://
+ldi.la.gov/consumers/insurance-type/homeowners/hurricane-resource-center/
+storm-mitigation-incentives.
+Ma, Lala, Margaret Walls, Matthew Wibbenmeyer, and Connor Lennon. “Risk disclosure and
+home prices: Evidence from California wildfire hazard zones.” Land Economics 100, no. 1
+(2024): 6-21.
+NAIC (National Association of Insurance Commissioners). 1945 Annual Conference Proceedings.
+Peterson, Mike. 2025. Deputy Commissioner, Climate and Sustainability Branch, California
+Department of Insurance. Personal communication with the authors. July 7.
+North Carolina Sea Grant. 2018. Memo to Coastal Homeowners: Insurance premium incentives
+for wind-resistant construction. September 21. https://ncseagrant.ncsu.edu/wp-content/uploads/2021/02/Wind-Incentives-Memo_March-9-2021.pdf.
+Oklahoma Insurance Department. 2025. Build Fortified: Oklahoma Insurance Discounts.
+https://www.oid.ok.gov/wp-content/uploads/2025/08/SOH-Handout-updated-1-1.pdf.
+Platt, R.V. 2014. Wildfire Hazard in the Home Ignition Zone: An Object-oriented Analysis Integrating LiDAR and VHR satellite imagery. Applied Geography 51: 108–117.
+Scott, S., & Alvarado, N. (2023, April 10). Understanding the new California wildfire rating
+requirements: Best practices for complying with Regulation 2644.9 and the impact on
+insurers. Milliman. https://www.milliman.com/en/insight/understanding-new-california-wildfire-ratings-requirements.
+Syphard, Alexandra, and Jon E. Keeley. 2019. Factors Associated with Structure Loss in the
+2013–2018 California Wildfires. Fire 2(49). September.
+Syphard, Alexandra, Heather Rustigian-Romsos, and Jon E. Keeley. 2021. Multiple-Scale
+Relationships between Vegetation, the Wildland–Urban Interface, and Structure Loss to
+Wildfire in California. Fire 4(12). March.
+Taylor, Reid, Madeline Turland, and Joakim Weill. 2025. Last Resort Insurance: Wildfires and
+the Regulation of a Crashing Market. Federal Reserve Bank of Dallas Working Paper No.
+2510 (March).
+Woody, Todd. 2025. Older Homes for Sale in California Now Come With Wildfire Warnings.
+Bloomberg. September 8. https://www.bloomberg.com/news/articles/2025-09-08/california-real-estate-home-sellers-now-need-to-disclose-fire-risks.
+Zamanialaei, Maryam, Daniel San Martin, Maria Theodori, Dwi Marhaendro Jati Purnomo, Ali
+Tohidi, Chris Lautenberger, Yiren Qin, Arnaud Trouve, and Michael Gollner. 2025. Fire
+Risk to Structures in California’s Wildland-Urban Interface. Nature Communications
+16(8041). August.
+Resources for the Future 26
+Appendix A: Supplemental Figures and
+Tables
+Table A1. FAIR Plan Percentage Discounts by Mitigation Action
+Effort Discount
+Defensible Space
+30-ft Noncombustible Structure 0.60%
+5-ft Clearance 0.60%
+5-ft Noncombustible Material 1.20%
+Local Ordinance Compliance 0.60%
+Under Deck Clearance 1.20%
+Building Hardening
+Class A Fire Rated Roof 1.20%
+Enclosed Eaves 1.20%
+Fire-Resistant Vents 1.20%
+Multi-Pane Windows 1.20%
+Vertical Clearance 1.20%
+IBHS
+IBHS Wildfire Plus 0.00%
+IBHS Wildfire Prepared Home 0.00%
+Maximum Property
+Combined Property Level 10.20%
+Community
+FRR Community 4.00%
+Firewise 4.00%
+Maximum (Property and Community)
+Maximum Discount 15.00%
+Maximum Discount Stated NA
+Note: IBHS = Insurance Institute for Business and Home Safety; FRR = Forestry Fire Risk
+Reduction; FAIR = Fair Access to Insurance Requirements.
+From Risk to Reward: Insurance Discounts for Wildfire Mitigation 27
+Appendix B: Methodology for the
+Analysis of Rate Filings
+We collected a total of 96 rate and rule filings, primarily from January 2022 through
+August 2025, except in cases where the most recent rate/rule filing was before 2022.
+These documents are publicly accessible through the California Department of
+Insurance’s Web Access to Rate and Form Filings (WARFF) and System for Electronic
+Rate and Form Filing (SERFF) systems, which contain the same files. From each filing,
+we extracted base rates, discount percentages, and dates filed, effective, and accepted
+by the CDI.
+Figure A1. ZIP-Code-Level Median Home Value
+Note: Median value of owner-occupied housing units from ACS 5-year (2016–2020) estimates.
+Resources for the Future 28
+All insurers provided itemized discounts in percentage terms. We used these numbers
+to also calculate the maximum discount percentage when it was not provided. In
+doing so, we followed the formula or approach as stated in the rate filings to combine
+individual discounts either multiplicatively or additively and took into account any
+“bonus” discounts (i.e., for completing multiple mitigation efforts).
+When calculating an average premium, as in Table 3 and Figure 1, we used an average
+premium equal to statewide earned exposure divided by statewide earned premium,
+based on 2023 data from the CDI. When calculating average premiums by zip code,
+as in Figures 2, 3, and 4, we used earned premium and earned exposure per zip code.
+These become similar to a weighted average by market share, as insurers with higher
+earned premiums and more earned exposure in a zip code impact its average premium
+more. We generally rely on earned premium and earned exposure instead of number of
+policies, except in Figure 1, where we use number of policies to demonstrate how many
+policies may receive what approximate discount. In Figure 2 and Figure 5, zip codes are
+separated into quintiles by a risk index used by the CDI in 2023.
+For Table 4 and Figure 1, we further estimate the magnitude of the discounts in dollar
+terms, differentiating between insurers who apply the discount to the whole premium
+versus those that use only the wildfire portion of the premium. In the former case, we
+simply applied the percentage to the average premium. In the latter case, we calculated
+an estimated “wildfire component of the premium” using the individual base rate
+numbers for each peril in the rate filing. We applied the percentage of the base rate
+composed by the wildfire premium to the average premium. This is a rough estimate,
+since wildfire premiums are impacted by many rating factors and do not necessarily
+scale proportionally from the base rate to the premium. But we cannot know wildfire
+premiums, so it is a necessary estimation. In Figure 1, we kept these discounts assigned
+at the insurer level, but in Table 4, we calculated dollar discounts across insurers. In
+that case, we weighted the discount percentages by statewide market share based on
+2023 CDI data. This created a “statewide average discount” that we then applied to
+premiums as discussed above.
+Resources for the Future 29

@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Distressed ZIP Coverage Analysis</title>
+  <style>
+    :root {
+      --bg: #f2f7f5;
+      --surface: #ffffff;
+      --border: #cfe0d8;
+      --text: #102118;
+      --muted: #4b6558;
+      --brand: #1c6c4f;
+      --brand-strong: #14503b;
+      --warn: #b54708;
+      --danger: #b42318;
+      --shadow: 0 14px 30px rgba(14, 48, 34, 0.09);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 0% 0%, #d6ece3 0%, transparent 32%),
+        radial-gradient(circle at 100% 100%, #eaf6ef 0%, transparent 28%),
+        var(--bg);
+      padding: 18px;
+    }
+
+    .app {
+      max-width: 1220px;
+      margin: 0 auto;
+      display: grid;
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .head {
+      padding: 18px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(140deg, #e4f2ea 0%, #f8fcfa 80%);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.25rem, 2.2vw, 1.9rem);
+    }
+
+    .sub {
+      margin-top: 8px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .body {
+      padding: 16px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+    }
+
+    .field label {
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 220px;
+      resize: vertical;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px;
+      font: 500 0.92rem/1.4 Consolas, "Courier New", monospace;
+      color: var(--text);
+      background: #fbfefc;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    button {
+      height: 42px;
+      border: 0;
+      border-radius: 10px;
+      padding: 0 14px;
+      font: inherit;
+      font-weight: 700;
+      color: #fff;
+      background: var(--brand);
+      cursor: pointer;
+    }
+
+    button:hover { background: var(--brand-strong); }
+
+    button.secondary {
+      background: #e6f2ec;
+      color: var(--brand-strong);
+      border: 1px solid var(--border);
+    }
+
+    .status {
+      min-height: 1.2rem;
+      color: var(--warn);
+      font-size: 0.92rem;
+    }
+
+    .kpis {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .kpi {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: linear-gradient(180deg, #f6fbf8 0%, #ffffff 100%);
+      padding: 12px;
+    }
+
+    .kpi .label {
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .kpi .value {
+      margin-top: 4px;
+      font-size: 1.02rem;
+      font-weight: 800;
+    }
+
+    .table-wrap {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: auto;
+      max-height: 520px;
+      background: #fff;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 740px;
+      font-size: 0.9rem;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid #e6efea;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #edf7f2;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      color: #24533f;
+    }
+
+    tr.zero td {
+      background: #fff4f2;
+      color: var(--danger);
+    }
+
+    @media (max-width: 980px) {
+      .grid,
+      .kpis {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <div class="head">
+        <h1>Distressed ZIP Coverage Analysis</h1>
+        <div class="sub">Compare your outreach event data to a distressed ZIP list and identify the least-served ZIP codes first.</div>
+      </div>
+
+      <div class="body">
+        <div class="grid">
+          <div class="field">
+            <label for="distressedInput">Distressed ZIP list (paste any text; 5-digit ZIPs are extracted automatically)</label>
+            <textarea id="distressedInput" placeholder="Paste your distressed ZIP list here. You can paste numbers, docs, or mixed text."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="csvFileInput">Outreach CSV file (Jan-May 13 geocoded outreach data)</label>
+            <input id="csvFileInput" type="file" accept=".csv,text/csv" />
+            <div class="toolbar">
+              <button id="loadDefaultBtn" type="button">Load Default CSV</button>
+              <button id="analyzeBtn" type="button">Analyze Coverage</button>
+              <button id="clearBtn" type="button" class="secondary">Clear Results</button>
+            </div>
+            <div class="status" id="status"></div>
+          </div>
+        </div>
+
+        <div class="kpis">
+          <div class="kpi"><div class="label">Distressed ZIPs</div><div class="value" id="kpiDistressed">0</div></div>
+          <div class="kpi"><div class="label">ZIPs with outreach</div><div class="value" id="kpiServed">0</div></div>
+          <div class="kpi"><div class="label">ZIPs with no outreach</div><div class="value" id="kpiUnserved">0</div></div>
+          <div class="kpi"><div class="label">Coverage rate</div><div class="value" id="kpiCoverage">0.0%</div></div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>ZIP</th>
+                <th>City</th>
+                <th>Events</th>
+                <th>Total Attendees/Views</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="resultsBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script id="zip-city-lookup-data" type="application/json">
+{
+  "90046": "Los Angeles, California",
+  "90063": "Los Angeles, California",
+  "90068": "Los Angeles, California",
+  "90077": "Los Angeles, California",
+  "90210": "Beverly Hills, California",
+  "90263": "Malibu, California",
+  "90265": "Malibu, California",
+  "90290": "Topanga, California",
+  "90704": "Avalon, California",
+  "91008": "Duarte, California",
+  "92060": "Palomar Mountain, California",
+  "92061": "Pauma Valley, California",
+  "92065": "Ramona, California",
+  "92066": "Ranchita, California",
+  "92070": "Santa Ysabel, California",
+  "92082": "Valley Center, California",
+  "92086": "Warner Springs, California",
+  "92230": "Cabazon, California",
+  "92239": "Desert Center, California",
+  "92256": "Morongo Valley, California",
+  "92536": "Aguanga, California",
+  "92539": "Anza, California",
+  "92548": "Homeland, California",
+  "92549": "Idyllwild, California",
+  "92561": "Mountain Center, California",
+  "92590": "Temecula, California",
+  "92676": "Silverado, California",
+  "92678": "Trabuco Canyon, California",
+  "93001": "Ventura, California",
+  "93002": "Ventura, California",
+  "93108": "Santa Barbara, California",
+  "93205": "Bodfish, California",
+  "93207": "California Hot Springs, California",
+  "93222": "Pine Mountain Club, California",
+  "93224": "Fellows, California",
+  "93225": "Frazier Park, California",
+  "93226": "Glennville, California",
+  "93238": "Kernville, California",
+  "93240": "Lake Isabella, California",
+  "93243": "Lebec, California",
+  "93435": "Harmony, California",
+  "93442": "Morro Bay, California",
+  "93444": "Nipomo, California",
+  "93445": "Oceano, California",
+  "93446": "Paso Robles, California",
+  "93447": "Paso Robles, California",
+  "93448": "Pismo Beach, California",
+  "93449": "Pismo Beach, California",
+  "93450": "San Ardo, California",
+  "93451": "San Miguel, California",
+  "93605": "Big Creek, California",
+  "93610": "Chowchilla, California",
+  "93614": "Coarsegold, California",
+  "93621": "Dunlap, California",
+  "93623": "Fish Camp, California",
+  "93628": "Hume, California",
+  "93633": "Kings Canyon National Pk, California",
+  "93634": "Lakeshore, California",
+  "93636": "Madera, California",
+  "93637": "Madera, California",
+  "93928": "Jolon, California",
+  "93930": "King City, California",
+  "93932": "Lockwood, California",
+  "93933": "Marina, California",
+  "93940": "Monterey, California",
+  "93950": "Pacific Grove, California",
+  "93953": "Pebble Beach, California",
+  "93954": "San Lucas, California",
+  "93955": "Seaside, California",
+  "93960": "Soledad, California",
+  "94929": "Dillon Beach, California",
+  "94930": "Fairfax, California",
+  "94933": "Forest Knolls, California",
+  "94937": "Inverness, California",
+  "94938": "Lagunitas, California",
+  "94939": "Larkspur, California",
+  "94940": "Marshall, California",
+  "94941": "Mill Valley, California",
+  "94942": "Mill Valley, California",
+  "94945": "Novato, California",
+  "95033": "Los Gatos, California",
+  "95039": "Moss Landing, California",
+  "95041": "Mount Hermon, California",
+  "95043": "Paicines, California",
+  "95060": "Santa Cruz, California",
+  "95061": "Santa Cruz, California",
+  "95062": "Santa Cruz, California",
+  "95063": "Santa Cruz, California",
+  "95064": "Santa Cruz, California",
+  "95065": "Santa Cruz, California",
+  "95305": "Big Oak Flat, California",
+  "95306": "Catheys Valley, California",
+  "95309": "Chinese Camp, California",
+  "95310": "Columbia, California",
+  "95311": "Coulterville, California",
+  "95318": "El Portal, California",
+  "95321": "Groveland, California",
+  "95325": "Hornitos, California",
+  "95327": "Jamestown, California",
+  "95329": "La Grange, California",
+  "95427": "Comptche, California",
+  "95428": "Covelo, California",
+  "95429": "Dos Rios, California",
+  "95432": "Elk, California",
+  "95435": "Finley, California",
+  "95437": "Fort Bragg, California",
+  "95441": "Geyserville, California",
+  "95443": "Glenhaven, California",
+  "95445": "Gualala, California",
+  "95449": "Hopland, California",
+  "95450": "Jenner, California",
+  "95451": "Kelseyville, California",
+  "95453": "Lakeport, California",
+  "95454": "Laytonville, California",
+  "95456": "Little River, California",
+  "95457": "Lower Lake, California",
+  "95458": "Lucerne, California",
+  "95459": "Manchester, California",
+  "95460": "Mendocino, California",
+  "95461": "Middletown, California",
+  "95463": "Navarro, California",
+  "95464": "Nice, California",
+  "95466": "Philo, California",
+  "95467": "Hidden Valley Lake, California",
+  "95468": "Point Arena, California",
+  "95469": "Potter Valley, California",
+  "95470": "Redwood Valley, California",
+  "95481": "Talmage, California",
+  "95482": "Ukiah, California",
+  "95485": "Upper Lake, California",
+  "95488": "Westport, California",
+  "95490": "Willits, California",
+  "95493": "Witter Springs, California",
+  "95494": "Yorkville, California",
+  "95501": "Eureka, California",
+  "95503": "Eureka, California",
+  "95511": "Alderpoint, California",
+  "95514": "Blocksburg, California",
+  "95519": "Mckinleyville, California",
+  "95521": "Arcata, California",
+  "95524": "Bayside, California",
+  "95525": "Blue Lake, California",
+  "95526": "Bridgeville, California",
+  "95527": "Burnt Ranch, California",
+  "95528": "Carlotta, California",
+  "95531": "Crescent City, California",
+  "95536": "Ferndale, California",
+  "95537": "Fields Landing, California",
+  "95538": "Fort Dick, California",
+  "95540": "Fortuna, California",
+  "95542": "Garberville, California",
+  "95543": "Gasquet, California",
+  "95545": "Honeydew, California",
+  "95546": "Hoopa, California",
+  "95547": "Hydesville, California",
+  "95548": "Klamath, California",
+  "95549": "Kneeland, California",
+  "95550": "Korbel, California",
+  "95551": "Loleta, California",
+  "95552": "Mad River, California",
+  "95553": "Miranda, California",
+  "95554": "Myers Flat, California",
+  "95555": "Orick, California",
+  "95556": "Orleans, California",
+  "95558": "Petrolia, California",
+  "95559": "Phillipsville, California",
+  "95560": "Redway, California",
+  "95562": "Rio Dell, California",
+  "95563": "Salyer, California",
+  "95564": "Samoa, California",
+  "95565": "Scotia, California",
+  "95567": "Smith River, California",
+  "95568": "Somes Bar, California",
+  "95569": "Redcrest, California",
+  "95570": "Trinidad, California",
+  "95571": "Weott, California",
+  "95573": "Willow Creek, California",
+  "95585": "Leggett, California",
+  "95587": "Piercy, California",
+  "95589": "Whitethorn, California",
+  "95595": "Zenia, California",
+  "95601": "Amador City, California",
+  "95602": "Auburn, California",
+  "95603": "Auburn, California",
+  "95604": "Auburn, California",
+  "95607": "Capay, California",
+  "95613": "Coloma, California",
+  "95614": "Cool, California",
+  "95619": "Diamond Springs, California",
+  "95623": "El Dorado, California",
+  "95629": "Fiddletown, California",
+  "95631": "Foresthill, California",
+  "95633": "Garden Valley, California",
+  "95634": "Georgetown, California",
+  "95635": "Greenwood, California",
+  "95636": "Grizzly Flats, California",
+  "95640": "Ione, California",
+  "95642": "Jackson, California",
+  "95644": "Kit Carson, California",
+  "95646": "Kirkwood, California",
+  "95648": "Lincoln, California",
+  "95650": "Loomis, California",
+  "95651": "Lotus, California",
+  "95656": "Mount Aukum, California",
+  "95658": "Newcastle, California",
+  "95661": "Roseville, California",
+  "95663": "Penryn, California",
+  "95664": "Pilot Hill, California",
+  "95665": "Pine Grove, California",
+  "95666": "Pioneer, California",
+  "95667": "Placerville, California",
+  "95669": "Plymouth, California",
+  "95672": "Rescue, California",
+  "95675": "River Pines, California",
+  "95677": "Rocklin, California",
+  "95678": "Roseville, California",
+  "95679": "Rumsey, California",
+  "95681": "Sheridan, California",
+  "95682": "Shingle Springs, California",
+  "95684": "Somerset, California",
+  "95685": "Sutter Creek, California",
+  "95689": "Volcano, California",
+  "95699": "Drytown, California",
+  "95701": "Alta, California",
+  "95703": "Applegate, California",
+  "95709": "Camino, California",
+  "95712": "Chicago Park, California",
+  "95713": "Colfax, California",
+  "95714": "Dutch Flat, California",
+  "95715": "Emigrant Gap, California",
+  "95717": "Gold Run, California",
+  "95720": "Kyburz, California",
+  "95721": "Echo Lake, California",
+  "95722": "Meadow Vista, California",
+  "95724": "Norden, California",
+  "95726": "Pollock Pines, California",
+  "95728": "Soda Springs, California",
+  "95735": "Twin Bridges, California",
+  "95736": "Weimar, California",
+  "95746": "Granite Bay, California",
+  "95747": "Roseville, California",
+  "95762": "El Dorado Hills, California",
+  "95765": "Rocklin, California",
+  "95910": "Alleghany, California",
+  "95914": "Bangor, California",
+  "95915": "Belden, California",
+  "95916": "Berry Creek, California",
+  "95917": "Biggs, California",
+  "95919": "Brownsville, California",
+  "95922": "Camptonville, California",
+  "95923": "Canyon Dam, California",
+  "95924": "Cedar Ridge, California",
+  "95925": "Challenge, California",
+  "95926": "Chico, California",
+  "95927": "Chico, California",
+  "95928": "Chico, California",
+  "95929": "Chico, California",
+  "95930": "Clipper Mills, California",
+  "95934": "Crescent Mills, California",
+  "95935": "Dobbins, California",
+  "95936": "Downieville, California",
+  "95937": "Dunnigan, California",
+  "95938": "Durham, California",
+  "95939": "Elk Creek, California",
+  "95940": "Feather Falls, California",
+  "95941": "Forbestown, California",
+  "95942": "Forest Ranch, California",
+  "95944": "Goodyears Bar, California",
+  "95945": "Grass Valley, California",
+  "95946": "Penn Valley, California",
+  "95947": "Greenville, California",
+  "95948": "Gridley, California",
+  "95949": "Grass Valley, California",
+  "95954": "Magalia, California",
+  "95956": "Meadow Valley, California",
+  "95958": "Nelson, California",
+  "95959": "Nevada City, California",
+  "95960": "North San Juan, California",
+  "95962": "Oregon House, California",
+  "95965": "Oroville, California",
+  "95966": "Oroville, California",
+  "95967": "Paradise, California",
+  "95968": "Palermo, California",
+  "95969": "Paradise, California",
+  "95971": "Quincy, California",
+  "95972": "Rackerby, California",
+  "95973": "Chico, California",
+  "95974": "Richvale, California",
+  "95975": "Rough And Ready, California",
+  "95977": "Smartsville, California",
+  "95978": "Stirling City, California",
+  "95979": "Stonyford, California",
+  "95980": "Storrie, California",
+  "95983": "Taylorsville, California",
+  "95984": "Twain, California",
+  "95986": "Washington, California",
+  "96001": "Redding, California",
+  "96002": "Redding, California",
+  "96003": "Redding, California",
+  "96006": "Adin, California",
+  "96007": "Anderson, California",
+  "96008": "Bella Vista, California",
+  "96009": "Bieber, California",
+  "96010": "Big Bar, California",
+  "96011": "Big Bend, California",
+  "96013": "Burney, California",
+  "96014": "Callahan, California",
+  "96015": "Canby, California",
+  "96016": "Cassel, California",
+  "96017": "Castella, California",
+  "96019": "Shasta Lake, California",
+  "96020": "Chester, California",
+  "96021": "Corning, California",
+  "96022": "Cottonwood, California",
+  "96023": "Dorris, California",
+  "96024": "Douglas City, California",
+  "96025": "Dunsmuir, California",
+  "96027": "Etna, California",
+  "96028": "Fall River Mills, California",
+  "96029": "Flournoy, California",
+  "96031": "Forks Of Salmon, California",
+  "96032": "Fort Jones, California",
+  "96033": "French Gulch, California",
+  "96034": "Gazelle, California",
+  "96035": "Gerber, California",
+  "96037": "Greenview, California",
+  "96038": "Grenada, California",
+  "96039": "Happy Camp, California",
+  "96040": "Hat Creek, California",
+  "96041": "Hayfork, California",
+  "96044": "Hornbrook, California",
+  "96046": "Hyampom, California",
+  "96047": "Igo, California",
+  "96048": "Junction City, California",
+  "96050": "Klamath River, California",
+  "96051": "Lakehead, California",
+  "96052": "Lewiston, California",
+  "96054": "Lookout, California",
+  "96055": "Los Molinos, California",
+  "96056": "Mcarthur, California",
+  "96057": "Mccloud, California",
+  "96058": "Macdoel, California",
+  "96059": "Manton, California",
+  "96061": "Mill Creek, California",
+  "96062": "Millville, California",
+  "96063": "Mineral, California",
+  "96064": "Montague, California",
+  "96065": "Montgomery Creek, California",
+  "96067": "Mount Shasta, California",
+  "96068": "Nubieber, California",
+  "96069": "Oak Run, California",
+  "96071": "Old Station, California",
+  "96073": "Palo Cedro, California",
+  "96074": "Paskenta, California",
+  "96075": "Paynes Creek, California",
+  "96076": "Platina, California",
+  "96078": "Proberta, California",
+  "96079": "Shasta Lake, California",
+  "96080": "Red Bluff, California",
+  "96084": "Round Mountain, California",
+  "96085": "Scott Bar, California",
+  "96086": "Seiad Valley, California",
+  "96087": "Shasta, California",
+  "96088": "Shingletown, California",
+  "96089": "Shasta Lake, California",
+  "96090": "Tehama, California",
+  "96091": "Trinity Center, California",
+  "96092": "Vina, California",
+  "96093": "Weaverville, California",
+  "96094": "Weed, California",
+  "96096": "Whitmore, California",
+  "96097": "Yreka, California",
+  "96101": "Alturas, California",
+  "96103": "Blairsden Graeagle, California",
+  "96104": "Cedarville, California",
+  "96105": "Chilcoot, California",
+  "96106": "Clio, California",
+  "96107": "Coleville, California",
+  "96108": "Davis Creek, California",
+  "96109": "Doyle, California",
+  "96110": "Eagleville, California",
+  "96111": "Floriston, California",
+  "96112": "Fort Bidwell, California",
+  "96113": "Herlong, California",
+  "96114": "Janesville, California",
+  "96115": "Lake City, California",
+  "96116": "Likely, California",
+  "96117": "Litchfield, California",
+  "96118": "Loyalton, California",
+  "96119": "Madeline, California",
+  "96120": "Markleeville, California",
+  "96121": "Milford, California",
+  "96122": "Portola, California",
+  "96123": "Ravendale, California",
+  "96124": "Calpine, California",
+  "96125": "Sierra City, California",
+  "96126": "Sierraville, California",
+  "96128": "Standish, California",
+  "96129": "Beckwourth, California",
+  "96130": "Susanville, California",
+  "96132": "Termo, California",
+  "96133": "Topaz, California",
+  "96134": "Tulelake, California",
+  "96135": "Vinton, California",
+  "96136": "Wendel, California",
+  "96137": "Westwood, California",
+  "96140": "Carnelian Bay, California",
+  "96141": "Homewood, California",
+  "96142": "Tahoma, California",
+  "96143": "Kings Beach, California",
+  "96145": "Tahoe City, California",
+  "96146": "Olympic Valley, California",
+  "96148": "Tahoe Vista, California",
+  "96150": "South Lake Tahoe, California",
+  "96151": "South Lake Tahoe, California",
+  "96152": "South Lake Tahoe, California",
+  "96155": "South Lake Tahoe, California",
+  "96156": "South Lake Tahoe, California",
+  "96158": "South Lake Tahoe, California",
+  "96160": "Truckee, California",
+  "96161": "Truckee, California",
+  "96162": "Truckee, California"
+}
+  </script>
+
+  <script>
+    const statusEl = document.getElementById("status");
+    const distressedInputEl = document.getElementById("distressedInput");
+    const csvFileInputEl = document.getElementById("csvFileInput");
+    const resultsBodyEl = document.getElementById("resultsBody");
+
+    const kpiDistressedEl = document.getElementById("kpiDistressed");
+    const kpiServedEl = document.getElementById("kpiServed");
+    const kpiUnservedEl = document.getElementById("kpiUnserved");
+    const kpiCoverageEl = document.getElementById("kpiCoverage");
+
+    let loadedCsvText = "";
+    let zipCityLookup = JSON.parse(document.getElementById("zip-city-lookup-data").textContent);
+
+    function parseDistressedZips(text) {
+      const matches = text.match(/\b\d{5}\b/g) || [];
+      return [...new Set(matches)].sort();
+    }
+
+    function parseCsvLine(line) {
+      const out = [];
+      let current = "";
+      let inQuotes = false;
+
+      for (let i = 0; i < line.length; i += 1) {
+        const ch = line[i];
+
+        if (ch === '"') {
+          if (inQuotes && line[i + 1] === '"') {
+            current += '"';
+            i += 1;
+          } else {
+            inQuotes = !inQuotes;
+          }
+        } else if (ch === "," && !inQuotes) {
+          out.push(current);
+          current = "";
+        } else {
+          current += ch;
+        }
+      }
+
+      out.push(current);
+      return out;
+    }
+
+    function parseCsvRows(csvText) {
+      const lines = csvText
+        .replace(/^\uFEFF/, "")
+        .split(/\r?\n/)
+        .filter((line) => line.trim().length > 0);
+
+      if (!lines.length) return [];
+
+      const headers = parseCsvLine(lines[0]).map((h) => h.trim());
+      const rows = [];
+
+      for (let i = 1; i < lines.length; i += 1) {
+        const cols = parseCsvLine(lines[i]);
+        const row = {};
+        headers.forEach((header, idx) => {
+          row[header] = (cols[idx] || "").trim();
+        });
+        rows.push(row);
+      }
+
+      return rows;
+    }
+
+    function normalizeZip(raw) {
+      const digits = String(raw || "").replace(/\D/g, "");
+      if (digits.length < 5) return "";
+      return digits.slice(0, 5);
+    }
+
+    function numeric(raw) {
+      const num = Number(String(raw || "").replace(/,/g, "").trim());
+      return Number.isFinite(num) ? num : 0;
+    }
+
+    function cityForZip(zip) {
+      return zipCityLookup[zip] || "";
+    }
+
+    function computeCoverage(rows, distressedZips) {
+      const outreachByZip = new Map();
+
+      rows.forEach((row) => {
+        const zip = normalizeZip(row.ZipCode || row.extracted_zip || row.zip || row.ZIP || "");
+        if (!zip) return;
+
+        if (!outreachByZip.has(zip)) {
+          outreachByZip.set(zip, { events: 0, attendees: 0 });
+        }
+
+        const item = outreachByZip.get(zip);
+        item.events += 1;
+        item.attendees += numeric(row.AttendeesOrViews || row.Attendees || row.Views || "0");
+      });
+
+      const result = distressedZips.map((zip) => {
+        const item = outreachByZip.get(zip) || { events: 0, attendees: 0 };
+        const status = item.events > 0 ? "Served" : "Not Served";
+        return { zip, city: cityForZip(zip), events: item.events, attendees: item.attendees, status };
+      });
+
+      result.sort((a, b) => {
+        if (a.events !== b.events) return a.events - b.events;
+        if (a.attendees !== b.attendees) return a.attendees - b.attendees;
+        return a.zip.localeCompare(b.zip);
+      });
+
+      return result;
+    }
+
+    function renderRows(rows) {
+      resultsBodyEl.innerHTML = "";
+
+      rows.forEach((row, idx) => {
+        const tr = document.createElement("tr");
+        if (row.events === 0) tr.classList.add("zero");
+        tr.innerHTML = `
+          <td>${idx + 1}</td>
+          <td>${row.zip}</td>
+          <td>${row.city}</td>
+          <td>${row.events}</td>
+          <td>${Math.round(row.attendees).toLocaleString("en-US")}</td>
+          <td>${row.status}</td>
+        `;
+        resultsBodyEl.appendChild(tr);
+      });
+    }
+
+    function renderKpis(rows) {
+      const total = rows.length;
+      const served = rows.filter((r) => r.events > 0).length;
+      const unserved = total - served;
+      const coverage = total ? (served / total) * 100 : 0;
+
+      kpiDistressedEl.textContent = String(total);
+      kpiServedEl.textContent = String(served);
+      kpiUnservedEl.textContent = String(unserved);
+      kpiCoverageEl.textContent = `${coverage.toFixed(1)}%`;
+    }
+
+    function clearResults() {
+      statusEl.textContent = "";
+      resultsBodyEl.innerHTML = "";
+      kpiDistressedEl.textContent = "0";
+      kpiServedEl.textContent = "0";
+      kpiUnservedEl.textContent = "0";
+      kpiCoverageEl.textContent = "0.0%";
+    }
+
+    function analyze() {
+      clearResults();
+
+      const distressed = parseDistressedZips(distressedInputEl.value);
+      if (!distressed.length) {
+        statusEl.textContent = "Paste at least one 5-digit ZIP code in the distressed ZIP list.";
+        return;
+      }
+
+      if (!loadedCsvText) {
+        statusEl.textContent = "Load your outreach CSV first (use Load Default CSV or choose a file).";
+        return;
+      }
+
+      const rows = parseCsvRows(loadedCsvText);
+      if (!rows.length) {
+        statusEl.textContent = "CSV appears empty or could not be parsed.";
+        return;
+      }
+
+      const coverageRows = computeCoverage(rows, distressed);
+      renderKpis(coverageRows);
+      renderRows(coverageRows);
+      statusEl.textContent = `Analysis complete: ranked ${coverageRows.length} distressed ZIP codes from least served to most served.`;
+    }
+
+    async function loadDefaultCsv() {
+      statusEl.textContent = "Loading Jan-May 13 coverage data...";
+      try {
+        const csvResponse = await fetch("meetings_jan_may_13_geocoded.csv");
+        if (!csvResponse.ok) throw new Error("CSV HTTP " + csvResponse.status);
+        loadedCsvText = await csvResponse.text();
+
+        statusEl.textContent = "Jan-May 13 CSV loaded. Running analysis...";
+        analyze();
+      } catch (err) {
+        loadedCsvText = "";
+        statusEl.textContent = "Could not auto-load default CSV in this browser context. Use the file picker to load the CSV manually.";
+      }
+    }
+
+    document.getElementById("loadDefaultBtn").addEventListener("click", loadDefaultCsv);
+
+    csvFileInputEl.addEventListener("change", async (event) => {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+
+      loadedCsvText = await file.text();
+      statusEl.textContent = `Loaded CSV: ${file.name}`;
+    });
+
+    document.getElementById("analyzeBtn").addEventListener("click", analyze);
+    document.getElementById("clearBtn").addEventListener("click", clearResults);
+
+    distressedInputEl.value = "90046\n92060\n92536\n93108\n93435\n93605\n93928\n94929\n95033\n95305\n90063\n92061\n92539\n93205\n93442\n93610\n93930\n94930\n95039\n95306\n90068\n92065\n92548\n93207\n93444\n93614\n93932\n94933\n95041\n95309\n90077\n92066\n92549\n93222\n93445\n93621\n93933\n94937\n95043\n95310\n90210\n92070\n92561\n93224\n93446\n93623\n93940\n94938\n95060\n95311\n90263\n92082\n92590\n93225\n93447\n93628\n93950\n94939\n95061\n95318\n90265\n92086\n92676\n93226\n93448\n93633\n93953\n94940\n95062\n95321\n90290\n92230\n92678\n93238\n93449\n93634\n93954\n94941\n95063\n95325\n90704\n92239\n93001\n93240\n93450\n93636\n93955\n94942\n95064\n95327\n91008\n92256\n93002\n93243\n93451\n93637\n93960\n94945\n95065\n95329\n95427\n95501\n95563\n95651\n95728\n95947\n96011\n96055\n96101\n96140\n95428\n95503\n95564\n95656\n95735\n95948\n96013\n96056\n96103\n96141\n95429\n95511\n95565\n95658\n95736\n95949\n96014\n96057\n96104\n96142\n95432\n95514\n95567\n95661\n95746\n95954\n96015\n96058\n96105\n96143\n95435\n95519\n95568\n95663\n95747\n95956\n96016\n96059\n96106\n96145\n95437\n95521\n95569\n95664\n95762\n95958\n96017\n96061\n96107\n96146\n95441\n95524\n95570\n95665\n95765\n95959\n96019\n96062\n96108\n96148\n95443\n95525\n95571\n95666\n95910\n95960\n96020\n96063\n96109\n96150\n95445\n95526\n95573\n95667\n95914\n95962\n96021\n96064\n96110\n96151\n95449\n95527\n95585\n95669\n95915\n95965\n96022\n96065\n96111\n96152\n95450\n95528\n95587\n95672\n95916\n95966\n96023\n96067\n96112\n96155\n95451\n95531\n95589\n95675\n95917\n95967\n96024\n96068\n96113\n96156\n95453\n95536\n95595\n95677\n95919\n95968\n96025\n96069\n96114\n96158\n95454\n95537\n95601\n95678\n95922\n95969\n96027\n96071\n96115\n96160\n95456\n95538\n95602\n95679\n95923\n95971\n96028\n96073\n96116\n96161\n95457\n95540\n95603\n95681\n95924\n95972\n96029\n96074\n96117\n96162\n95458\n95542\n95604\n95682\n95925\n95973\n96031\n96075\n96118\n95459\n95543\n95607\n95684\n95926\n95974\n96032\n96076\n96119\n95460\n95545\n95613\n95685\n95927\n95975\n96033\n96078\n96120\n95461\n95546\n95614\n95689\n95928\n95977\n96034\n96079\n96121\n95463\n95547\n95619\n95699\n95929\n95978\n96035\n96080\n96122\n95464\n95548\n95623\n95701\n95930\n95979\n96037\n96084\n96123\n95466\n95549\n95629\n95703\n95934\n95980\n96038\n96085\n96124\n95467\n95550\n95631\n95709\n95935\n95983\n96039\n96086\n96125\n95468\n95551\n95633\n95712\n95936\n95984\n96040\n96087\n96126\n95469\n95552\n95634\n95713\n95937\n95986\n96041\n96088\n96128\n95470\n95553\n95635\n95714\n95938\n96001\n96044\n96089\n96129\n95481\n95554\n95636\n95715\n95939\n96002\n96046\n96090\n96130\n95482\n95555\n95640\n95717\n95940\n96003\n96047\n96091\n96132\n95485\n95556\n95642\n95720\n95941\n96006\n96048\n96092\n96133\n95488\n95558\n95644\n95721\n95942\n96007\n96050\n96093\n96134\n95490\n95559\n95646\n95722\n95944\n96008\n96051\n96094\n96135\n95493\n95560\n95648\n95724\n95945\n96009\n96052\n96096\n96136\n95494\n95562\n95650\n95726\n95946\n96010\n96054\n96097\n96137";
+
+    loadDefaultCsv();
+  </script>
+</body>
+</html>
