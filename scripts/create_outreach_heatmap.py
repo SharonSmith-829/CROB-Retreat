@@ -33,18 +33,30 @@ def main() -> None:
     input_path = Path(args.input)
     output_path = Path(args.output)
 
-    dataframe = pd.read_csv(input_path)
+    try:
+        dataframe = pd.read_csv(input_path)
+    except Exception as error:
+        raise ValueError(f"Unable to read input CSV: {input_path}") from error
     required = {"latitude", "longitude"}
     missing = required - set(dataframe.columns)
     if missing:
         missing_columns = ", ".join(sorted(missing))
         raise ValueError(f"Missing required column(s): {missing_columns}")
 
+    dataframe["latitude"] = pd.to_numeric(dataframe["latitude"], errors="coerce")
+    dataframe["longitude"] = pd.to_numeric(dataframe["longitude"], errors="coerce")
+    invalid_coordinates = dataframe[dataframe["latitude"].isna() | dataframe["longitude"].isna()]
+    if not invalid_coordinates.empty:
+        invalid_rows = ", ".join(str(index + 2) for index in invalid_coordinates.index[:5])
+        raise ValueError(
+            f"Found invalid latitude/longitude value(s) in CSV row(s): {invalid_rows}"
+        )
+
     if "attendance" in dataframe.columns:
         dataframe["attendance"] = pd.to_numeric(dataframe["attendance"], errors="coerce").fillna(1)
 
-    center_lat = dataframe["latitude"].astype(float).mean()
-    center_lon = dataframe["longitude"].astype(float).mean()
+    center_lat = dataframe["latitude"].mean()
+    center_lon = dataframe["longitude"].mean()
 
     outreach_map = folium.Map(location=[center_lat, center_lon], zoom_start=5)
     HeatMap(build_heat_data(dataframe), radius=args.radius).add_to(outreach_map)
