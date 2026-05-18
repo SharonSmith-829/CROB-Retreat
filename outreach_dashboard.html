@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outreach Dashboard</title>
+  <style>
+    :root {
+      --bg: #f4f7f9;
+      --surface: #ffffff;
+      --surface-soft: #f8fbfd;
+      --text: #122230;
+      --muted: #557086;
+      --brand: #0f6b94;
+      --brand-strong: #0a5677;
+      --border: #d7e3ec;
+      --shadow: 0 18px 40px rgba(12, 40, 66, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, #e0eef8 0%, transparent 32%),
+        radial-gradient(circle at bottom right, #e8f4ef 0%, transparent 28%),
+        var(--bg);
+    }
+
+    body {
+      padding: 20px;
+    }
+
+    .shell {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(15, 107, 148, 0.11), rgba(28, 108, 79, 0.08));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      color: var(--brand);
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 8px 0 10px;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: 1.05;
+    }
+
+    .summary {
+      margin: 0;
+      max-width: 76ch;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--brand-strong);
+      font-weight: 700;
+      box-shadow: 0 6px 18px rgba(12, 40, 66, 0.04);
+    }
+
+    .links a.primary {
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .panel {
+      grid-column: span 12;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: grid;
+      min-height: 720px;
+    }
+
+    .panel-header {
+      padding: 16px 18px;
+      background: linear-gradient(180deg, #f9fcfe 0%, #ffffff 100%);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .panel-header h2 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .panel-header p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .frame-wrap {
+      background: #fdfefe;
+      min-height: 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      min-height: 640px;
+      background: #fff;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    @media (min-width: 1100px) {
+      .panel.map { grid-column: span 7; }
+      .panel.coverage { grid-column: span 5; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">CROB Retreat</div>
+      <h1>Outreach map and distressed ZIP coverage</h1>
+      <p class="summary">
+        Use this page to review outreach activity and identify under-served ZIP codes in one place.
+        Both panels load from the repo, so anyone with access to the GitHub Pages site or the raw files
+        can open the dashboard without anything installed locally.
+      </p>
+      <div class="links">
+        <a class="primary" href="outreach_heatmap.html" target="_blank" rel="noopener noreferrer">Open outreach map</a>
+        <a href="zip_coverage_analysis.html" target="_blank" rel="noopener noreferrer">Open ZIP coverage analysis</a>
+        <a href="README.md" target="_blank" rel="noopener noreferrer">Read setup notes</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="panel map">
+        <div class="panel-header">
+          <div>
+            <h2>Outreach Heatmap</h2>
+            <p>Interactive map with clustered events, popups, and heat density.</p>
+          </div>
+          <p class="note">Loads from <a href="outreach_heatmap.html" target="_blank" rel="noopener noreferrer">outreach_heatmap.html</a></p>
+        </div>
+        <div class="frame-wrap">
+          <iframe src="outreach_heatmap.html" title="Outreach heatmap" loading="lazy"></iframe>
+        </div>
+      </article>
+
+      <article class="panel coverage">
+        <div class="panel-header">
+          <div>
+            <h2>Distressed ZIP Coverage</h2>
+            <p>Paste a distressed ZIP list and compare it against your outreach coverage.</p>
+          </div>
+          <p class="note">Loads from <a href="zip_coverage_analysis.html" target="_blank" rel="noopener noreferrer">zip_coverage_analysis.html</a></p>
+        </div>
+        <div class="frame-wrap">
+          <iframe src="zip_coverage_analysis.html" title="Distressed ZIP coverage analysis" loading="lazy"></iframe>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
