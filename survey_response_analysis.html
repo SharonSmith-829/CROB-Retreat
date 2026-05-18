@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Response Analysis</title>
+  <style>
+    :root {
+      --bg: #f4f7f9;
+      --surface: #ffffff;
+      --surface-soft: #f8fbfd;
+      --text: #102234;
+      --muted: #577287;
+      --brand: #0f6b94;
+      --brand-strong: #0a5677;
+      --accent: #1c6c4f;
+      --warn: #b7791f;
+      --border: #d7e3ec;
+      --shadow: 0 18px 40px rgba(12, 40, 66, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, #e0eef8 0%, transparent 34%),
+        radial-gradient(circle at bottom right, #e8f4ef 0%, transparent 28%),
+        var(--bg);
+    }
+
+    body { padding: 22px; }
+
+    .shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero,
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 26px;
+      background: linear-gradient(135deg, rgba(15, 107, 148, 0.11), rgba(28, 108, 79, 0.08));
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      color: var(--brand);
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 8px 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+    }
+
+    .summary {
+      margin: 0;
+      max-width: 82ch;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: rgba(15, 107, 148, 0.08);
+      color: var(--brand-strong);
+      border: 1px solid rgba(15, 107, 148, 0.12);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .top-links a,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--brand-strong);
+      box-shadow: 0 6px 18px rgba(12, 40, 66, 0.04);
+    }
+
+    .top-links a.primary,
+    .button.primary {
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 1.06rem;
+    }
+
+    .card p,
+    .card li {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: linear-gradient(180deg, #f7fbf9 0%, #ffffff 100%);
+    }
+
+    .warn {
+      border-left: 4px solid var(--warn);
+      background: linear-gradient(180deg, #fffaf1 0%, #ffffff 100%);
+    }
+
+    .stats {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .stat {
+      padding: 14px;
+      border-radius: 16px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.7rem;
+      line-height: 1;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .bars {
+      display: grid;
+      gap: 12px;
+    }
+
+    .bar-row {
+      display: grid;
+      gap: 8px;
+    }
+
+    .bar-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .bar-track {
+      width: 100%;
+      height: 12px;
+      background: #eaf0f5;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--brand), #4ca3c7);
+      border-radius: inherit;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      color: var(--brand-strong);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .theme-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .theme {
+      padding: 14px;
+      border-radius: 16px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+    }
+
+    .theme strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .theme ul {
+      padding-left: 18px;
+      margin: 0;
+      display: grid;
+      gap: 6px;
+    }
+
+    .quote-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .quote {
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .footer-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">Survey Analysis</div>
+      <h1>CROB Presentation Survey</h1>
+      <p class="summary">
+        A streamlined readout of the presentation survey responses. The strongest signal is that the audience rated the session highly, with specific comments pointing to clearer visuals, practical examples, and more location-specific content for the next version.
+      </p>
+      <div class="meta">
+        <span class="pill">Answered: 46</span>
+        <span class="pill">Overall rating: 4.78 / 5</span>
+        <span class="pill">Clarity rating: 4.65 / 5</span>
+        <span class="pill">Staff Lead: Sharon</span>
+      </div>
+      <div class="top-links">
+        <a class="primary" href="index.html">Back to hub</a>
+        <a href="goal4_briefing.html">Goal 4 briefing</a>
+        <a href="https://app.sli.do/event/1yoXrVNWrQVMTB5vgaoxhV" target="_blank" rel="noopener noreferrer">Open Slido</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card wide callout">
+        <h2>Bottom-Line Takeaway</h2>
+        <p>
+          The presentation landed well. Ratings were very strong, and the open-ended comments suggest the next improvement is not a major rewrite but a more local, more visual, and more explanatory version of the same core message.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Quick Stats</h2>
+        <div class="stats">
+          <div class="stat">
+            <strong>46</strong>
+            <span>Total responses to the core rating questions</span>
+          </div>
+          <div class="stat">
+            <strong>41</strong>
+            <span>Responses to the favorite-part question</span>
+          </div>
+          <div class="stat">
+            <strong>31</strong>
+            <span>Responses to the “what would help” question</span>
+          </div>
+          <div class="stat">
+            <strong>5</strong>
+            <span>Skipped responses on the favorite-part question</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Rating Snapshot</h2>
+        <div class="bars">
+          <div class="bar-row">
+            <div class="bar-head"><span>Overall presentation rating</span><strong>4.78 / 5</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width: 80.43%"></div></div>
+            <div class="chips">
+              <span class="chip">5 = 80.43%</span>
+              <span class="chip">4 = 17.39%</span>
+              <span class="chip">3 = 2.17%</span>
+              <span class="chip">1-2 = 0%</span>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-head"><span>Slides were clear and easy to follow</span><strong>4.65 / 5</strong></div>
+            <div class="bar-track"><div class="bar-fill" style="width: 76.09%"></div></div>
+            <div class="chips">
+              <span class="chip">5 = 76.09%</span>
+              <span class="chip">4 = 17.39%</span>
+              <span class="chip">3 = 4.35%</span>
+              <span class="chip">1 = 2.17%</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card wide">
+        <h2>What People Liked Most</h2>
+        <div class="theme-grid">
+          <div class="theme">
+            <strong>Clear information</strong>
+            <ul>
+              <li>“The info”</li>
+              <li>“Publications distributed are clear”</li>
+            </ul>
+          </div>
+          <div class="theme">
+            <strong>Visuals and delivery</strong>
+            <ul>
+              <li>Visuals</li>
+              <li>La voz</li>
+              <li>Examples</li>
+            </ul>
+          </div>
+          <div class="theme">
+            <strong>Overall positive reception</strong>
+            <ul>
+              <li>High ratings across both numeric questions</li>
+              <li>Very few low scores</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="card wide warn">
+        <h2>What Would Make It More Helpful</h2>
+        <div class="theme-grid">
+          <div class="theme">
+            <strong>More local relevance</strong>
+            <ul>
+              <li>What is being done to match fire mitigation to our specific area</li>
+              <li>More info on high fire maps</li>
+            </ul>
+          </div>
+          <div class="theme">
+            <strong>More explanation</strong>
+            <ul>
+              <li>Add a slide or visual explanation of reinsurance</li>
+              <li>Make important concepts easier to picture</li>
+            </ul>
+          </div>
+          <div class="theme">
+            <strong>Presentation conditions</strong>
+            <ul>
+              <li>The room was not dark enough to see the slides</li>
+              <li>More attendees</li>
+            </ul>
+          </div>
+          <div class="theme">
+            <strong>Keep what worked</strong>
+            <ul>
+              <li>Updates on future changes would be useful</li>
+              <li>Keep showing approved insurers</li>
+              <li>Good information and resources</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Action Items</h2>
+        <ul>
+          <li>Keep the current structure, visuals, and examples.</li>
+          <li>Add one or two local examples tied to the target area.</li>
+          <li>Include a plain-language explanation for reinsurance.</li>
+          <li>Improve room visibility for slide readability.</li>
+          <li>Use future surveys to test whether the updates made the deck clearer.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Representative Comments</h2>
+        <div class="quote-list">
+          <div class="quote">“It was very helpful as is.”</div>
+          <div class="quote">“The added portion about searching for approved insurers was great.”</div>
+          <div class="quote">“Re-insurance came up in the discussion during the presentation, but there was no slide for what it is.”</div>
+          <div class="quote">“More info on high fire maps.”</div>
+        </div>
+      </article>
+
+      <article class="card wide">
+        <h2>Summary for the Retreat</h2>
+        <p class="footer-note">
+          This survey says the presentation is already strong. The next version should focus on local context, clearer definitions, better viewing conditions, and a tighter link between what the audience hears and what they can immediately use.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
