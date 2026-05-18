@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goal 4 Briefing</title>
+  <style>
+    :root {
+      --bg: #f4f7f9;
+      --surface: #ffffff;
+      --surface-soft: #f8fbfd;
+      --text: #102234;
+      --muted: #577287;
+      --brand: #0f6b94;
+      --brand-strong: #0a5677;
+      --accent: #1c6c4f;
+      --border: #d7e3ec;
+      --shadow: 0 18px 40px rgba(12, 40, 66, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, #e0eef8 0%, transparent 34%),
+        radial-gradient(circle at bottom right, #e8f4ef 0%, transparent 28%),
+        var(--bg);
+    }
+
+    body { padding: 22px; }
+
+    .shell {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero,
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 26px;
+      background: linear-gradient(135deg, rgba(15, 107, 148, 0.11), rgba(28, 108, 79, 0.08));
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      color: var(--brand);
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 8px 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+    }
+
+    .summary {
+      margin: 0;
+      max-width: 80ch;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: rgba(15, 107, 148, 0.08);
+      color: var(--brand-strong);
+      border: 1px solid rgba(15, 107, 148, 0.12);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .top-links a,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--brand-strong);
+      box-shadow: 0 6px 18px rgba(12, 40, 66, 0.04);
+    }
+
+    .top-links a.primary,
+    .button.primary {
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 1.06rem;
+    }
+
+    .card p,
+    .card li {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: linear-gradient(180deg, #f7fbf9 0%, #ffffff 100%);
+    }
+
+    .metrics {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .metric {
+      padding: 14px;
+      border-radius: 14px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .footer-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin: 0;
+    }
+
+    @media (min-width: 1100px) {
+      .span-2 { grid-column: span 2; }
+      .span-3 { grid-column: span 3; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">Goal 4</div>
+      <h1>Data-Driven Performance Measurement</h1>
+      <p class="summary">
+        A streamlined retreat briefing for CROB staff: what will be measured, how data will be collected, how it will inform decisions, and what needs to happen next to make the system usable.
+      </p>
+      <div class="meta">
+        <span class="pill">CROB Team Retreat</span>
+        <span class="pill">Staff Lead: Sharon</span>
+        <span class="pill">Focus: Outcomes, data quality, and actionability</span>
+      </div>
+      <div class="top-links">
+        <a class="primary" href="index.html">Back to hub</a>
+        <a href="outreach_heatmap.html">Outreach map</a>
+        <a href="zip_coverage_analysis.html">ZIP coverage</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card wide callout">
+        <h2>Goal Statement</h2>
+        <p>
+          Develop and operationalize a performance measurement framework that enables CROB to track outcomes, demonstrate impact, and make evidence-informed strategic decisions.
+        </p>
+      </article>
+
+      <article class="card span-2">
+        <h2>Key Objectives</h2>
+        <ul>
+          <li>Build a measurement framework with clear KPIs and benchmarks.</li>
+          <li>Track outreach, feedback, and outcomes in one place.</li>
+          <li>Use data to adjust outreach, staffing, and resources.</li>
+          <li>Build staff capacity for data entry, analysis, and visualization.</li>
+        </ul>
+      </article>
+
+      <article class="card span-2">
+        <h2>What Success Looks Like</h2>
+        <div class="metrics">
+          <div class="metric">
+            <strong>Quarterly reports on time</strong>
+            Standardized reports delivered each quarter.
+          </div>
+          <div class="metric">
+            <strong>Data quality scores</strong>
+            Completeness, accuracy, and timeliness tracked consistently.
+          </div>
+          <div class="metric">
+            <strong>Data-informed decisions</strong>
+            Strategy and resource allocation shaped by the data.
+          </div>
+          <div class="metric">
+            <strong>Stakeholder satisfaction</strong>
+            Leaders trust the reporting format and transparency.
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Measurement Priorities</h2>
+        <ul>
+          <li>Distressed areas reached.</li>
+          <li>People reached and topics discussed.</li>
+          <li>Quarterly and annual benchmarks with check-ins.</li>
+          <li>Annual total events and progress to goal.</li>
+          <li>Alignment with organizational reporting requirements.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Tracking Systems</h2>
+        <ul>
+          <li>Community feedback database.</li>
+          <li>Paper feedback forms at events and tablet/laptop capture.</li>
+          <li>Digital analytics feeding reporting dashboards.</li>
+          <li>Cross-reference event locations with fraud and risk corridors.</li>
+          <li>Track follow-up outcomes like complaints, FAIR Plan enrollments, and helpline calls.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Data-Driven Adjustments</h2>
+        <ul>
+          <li>Monthly check-ins on data completeness.</li>
+          <li>Quarterly data review meetings and cleanup.</li>
+          <li>Live dashboard showing current completeness.</li>
+          <li>Actionable heat maps linked to distressed ZIPs, uninsured motorists, and senior concentration.</li>
+          <li>Leadership recommendations based on demographic insights.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Internal Capacity</h2>
+        <ul>
+          <li>Train staff on entry standards and quality control.</li>
+          <li>Make timely Quorum entry a performance KPI.</li>
+          <li>Define what “on time” means.</li>
+          <li>Identify barriers that slow complete entry.</li>
+          <li>Keep discussing easier, more consistent data entry methods.</li>
+        </ul>
+      </article>
+
+      <article class="card wide">
+        <h2>Must Be Done Now</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+          <div class="metric">
+            <strong>Data cleanup</strong>
+            Remove all material fields from filtering in the heat map and Quorum.
+          </div>
+          <div class="metric">
+            <strong>Timely entry KPI</strong>
+            Define “on time” and include it in annual reviews.
+          </div>
+          <div class="metric">
+            <strong>Quarterly cleanup</strong>
+            Ensure all fields are filled out and usable for reporting.
+          </div>
+          <div class="metric">
+            <strong>Calendar → Quorum automation</strong>
+            Explore automation as a near-future goal with IT approval.
+          </div>
+        </div>
+      </article>
+
+      <article class="card span-2">
+        <h2>The Case for Using AI</h2>
+        <ul>
+          <li>AI is currently blocked on work computers; IT approval is required.</li>
+          <li>Useful for heat maps, coverage visuals, and cross-referencing need vs. outreach.</li>
+          <li>Only useful if the source data is consistent and cleaned first.</li>
+        </ul>
+      </article>
+
+      <article class="card span-2">
+        <h2>Community Feedback</h2>
+        <ul>
+          <li>Send surveys every 6 months for chambers and consider internal surveys.</li>
+          <li>Paper forms or pre-loaded tablets reduce QR-code barriers for seniors.</li>
+          <li>Staff should ask directly and personally for feedback.</li>
+          <li>Digitize paper forms when needed.</li>
+        </ul>
+      </article>
+
+      <article class="card wide">
+        <h2>Retreat Discussion: Quorum &amp; Data Entry</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+          <div class="metric">
+            <strong>Why it is hard</strong>
+            Entry feels like extra admin work, deadlines are unclear, and staff do not always see the impact.
+          </div>
+          <div class="metric">
+            <strong>What to discuss</strong>
+            What would make on-time entry easier, and what decisions would improve with better data?
+          </div>
+          <div class="metric">
+            <strong>Open questions</strong>
+            What fields are truly necessary, and how do we make every entry more actionable?
+          </div>
+        </div>
+      </article>
+
+      <article class="card wide">
+        <h2>Bottom Line</h2>
+        <p class="footer-note">
+          The strategy only works if the data is complete, cleaned regularly, and tied to actual decisions. Good dashboards come after good entry habits, not before them.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
