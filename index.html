@@ -3,726 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wildfire Resilience Payback Calculator</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>CROB Retreat Hub</title>
   <style>
     :root {
-      --bg: #f3f8fb;
+      --bg: #f4f7f9;
       --surface: #ffffff;
-      --surface-soft: #eef5fb;
       --text: #102234;
-      --muted: #50667c;
+      --muted: #577287;
       --brand: #0f6b94;
-      --brand-strong: #0b5677;
-      --accent: #1f9bcf;
-      --border: #d5e2ee;
-      --shadow: 0 14px 36px rgba(12, 47, 79, 0.08);
-      --selection: #dff0fb;
+      --brand-strong: #0a5677;
+      --border: #d7e3ec;
+      --shadow: 0 18px 40px rgba(12, 40, 66, 0.08);
     }
 
     * { box-sizing: border-box; }
 
-    body {
+    html, body {
       margin: 0;
-      font-family: "Manrope", "Segoe UI", sans-serif;
+      min-height: 100%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 0% 0%, #dceef9 0%, transparent 35%),
-        radial-gradient(circle at 100% 100%, #e9f5ff 0%, transparent 30%),
+        radial-gradient(circle at top left, #e0eef8 0%, transparent 32%),
+        radial-gradient(circle at bottom right, #e8f4ef 0%, transparent 28%),
         var(--bg);
-      min-height: 100vh;
+    }
+
+    body {
       padding: 24px;
     }
 
-    .app {
-      max-width: 1320px;
+    .shell {
+      max-width: 1100px;
       margin: 0 auto;
       display: grid;
-      gap: 16px;
+      gap: 18px;
     }
 
-    .panel {
+    .hero,
+    .card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 18px;
       box-shadow: var(--shadow);
-      overflow: hidden;
     }
 
-    .header {
-      padding: 24px;
-      background: linear-gradient(135deg, #e5f2fb 0%, #f7fbff 70%);
-      border-bottom: 1px solid var(--border);
+    .hero {
+      padding: 26px;
+      background: linear-gradient(135deg, rgba(15, 107, 148, 0.11), rgba(28, 108, 79, 0.08));
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      color: var(--brand);
+      font-weight: 800;
     }
 
     h1 {
+      margin: 8px 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+    }
+
+    .summary {
       margin: 0;
-      font-size: clamp(1.5rem, 2.5vw, 2.1rem);
-      font-weight: 800;
-      letter-spacing: 0.01em;
-    }
-
-    .subtitle {
-      margin-top: 8px;
+      max-width: 72ch;
       color: var(--muted);
-      font-family: "DM Sans", "Segoe UI", sans-serif;
-      font-size: 1rem;
-      line-height: 1.45;
-    }
-
-    .content {
-      padding: 16px;
-      display: grid;
-      gap: 16px;
-    }
-
-    .card {
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: var(--surface);
-      box-shadow: none;
-    }
-
-    .card-inner { padding: 16px; }
-
-    .section-title {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
-    }
-
-    .section-title h2,
-    .section-title h3 {
-      margin: 0;
-      font-size: 1.08rem;
-      font-weight: 800;
-    }
-
-    .section-title .hint {
-      color: var(--muted);
-      font-size: 0.9rem;
+      line-height: 1.55;
     }
 
     .grid {
       display: grid;
-      gap: 12px;
-      grid-template-columns: repeat(12, 1fr);
-      align-items: end;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
 
-    .field {
-      display: grid;
-      gap: 6px;
+    .card {
+      padding: 18px;
     }
 
-    .field label {
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+    }
+
+    .card p {
+      margin: 0 0 14px;
       color: var(--muted);
-      font-size: 0.92rem;
-      font-weight: 600;
-    }
-
-    .field input {
-      height: 44px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 0 12px;
-      font: inherit;
-      color: var(--text);
-      background: #fbfdff;
-    }
-
-    .field input:focus {
-      outline: 2px solid rgba(15, 107, 148, 0.22);
-      border-color: var(--brand);
-    }
-
-    .field--premium { grid-column: span 5; }
-    .field--button { grid-column: span 3; }
-    .field--spacer { grid-column: 1 / -1; }
-
-    button {
-      height: 44px;
-      border: 0;
-      border-radius: 10px;
-      padding: 0 16px;
-      font: inherit;
-      font-weight: 800;
-      color: #fff;
-      background: var(--brand);
-      cursor: pointer;
-      transition: transform 150ms ease, background 150ms ease, box-shadow 150ms ease;
-    }
-
-    button:hover {
-      background: var(--brand-strong);
-      transform: translateY(-1px);
-    }
-
-    button.secondary {
-      background: #e8f2f8;
-      color: var(--brand-strong);
-      border: 1px solid var(--border);
-      font-weight: 700;
-    }
-
-    button.secondary:hover { background: #dcecf6; }
-
-    button.ghost {
-      background: #f8fbfe;
-      color: var(--brand-strong);
-      border: 1px solid var(--border);
-      font-weight: 700;
-    }
-
-    .toolbar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 6px;
-      align-items: center;
-    }
-
-    .toolbar button {
-      flex: 0 0 auto;
-      white-space: nowrap;
-      min-width: max-content;
-    }
-
-    .kpis {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .kpi {
-      position: relative;
-      padding: 14px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
-      overflow: hidden;
-    }
-
-    .kpi::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      background: linear-gradient(180deg, var(--brand), var(--accent));
-    }
-
-    .kpi .label {
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-
-    .kpi .value {
-      margin-top: 4px;
-      font-size: 1.05rem;
-      font-weight: 800;
-    }
-
-    .status {
-      min-height: 1.2rem;
-      color: #b9532b;
-      font-size: 0.92rem;
-      margin-top: 6px;
-    }
-
-    .stack-card {
-      display: grid;
-      gap: 12px;
-      padding: 16px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
-    }
-
-    .stack-grid {
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .stack-item {
-      padding: 12px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      background: #fff;
-    }
-
-    .stack-item .label {
-      color: var(--muted);
-      font-size: 0.8rem;
-    }
-
-    .stack-item .value {
-      margin-top: 4px;
-      font-weight: 800;
-      font-size: 1rem;
-    }
-
-    .selected-list {
-      color: var(--muted);
-      font-size: 0.92rem;
-      line-height: 1.45;
-    }
-
-    .table-wrap {
-      overflow: auto;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: #fff;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      min-width: 860px;
-      font-size: 0.92rem;
-    }
-
-    th,
-    td {
-      text-align: left;
-      padding: 11px 12px;
-      border-bottom: 1px solid #e8eff2;
-      vertical-align: top;
-    }
-
-    th {
-      position: sticky;
-      top: 0;
-      z-index: 1;
-      background: #edf5fc;
-      color: #20445f;
-      font-size: 0.8rem;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-
-    tr:nth-child(even) td { background: #fbfdff; }
-
-    tr.clickable-row { cursor: pointer; user-select: none; }
-    tr.clickable-row:hover td { background: #eef6fc; }
-    tr.clickable-row.selected td { background: var(--selection) !important; }
-
-    .action-cell {
-      display: inline-flex;
-      align-items: flex-start;
-      gap: 8px;
-    }
-
-    .check-pill {
-      width: 20px;
-      height: 20px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: transparent;
-      background: #fff;
-      margin-top: 1px;
-      flex: 0 0 auto;
-      font-size: 0.75rem;
-    }
-
-    tr.clickable-row.selected .check-pill {
-      background: var(--brand);
-      border-color: var(--brand);
-      color: #fff;
-    }
-
-    .tabs {
-      display: grid;
-      gap: 0;
-    }
-
-    .tab-buttons {
-      display: inline-flex;
-      border-bottom: 1px solid var(--border);
-      background: #f4f9fe;
-      overflow-x: auto;
-    }
-
-    .tab-buttons button {
-      border-radius: 0;
-      background: transparent;
-      color: var(--muted);
-      border-right: 1px solid var(--border);
-      font-weight: 700;
-      height: 44px;
-      transform: none;
-    }
-
-    .tab-buttons button.active {
-      background: #fff;
-      color: var(--brand-strong);
-    }
-
-    .tab-panel {
-      display: none;
-      padding: 14px;
       line-height: 1.5;
     }
 
-    .tab-panel.active { display: block; }
-
-    @media (max-width: 1100px) {
-      .kpis,
-      .stack-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .field--premium,
-      .field--button,
-      .field--spacer {
-        grid-column: 1 / -1;
-      }
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 999px;
+      background: var(--brand);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--brand);
     }
 
-    @media (max-width: 720px) {
-      body { padding: 12px; }
-      .kpis,
-      .stack-grid {
-        grid-template-columns: 1fr;
-      }
+    a.button.secondary {
+      background: #eef5f9;
+      color: var(--brand-strong);
+      border-color: var(--border);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
     }
   </style>
 </head>
 <body>
-  <main class="app">
-    <section class="panel">
-      <div class="header">
-        <h1>Wildfire Resilience Payback Calculator</h1>
-        <div class="subtitle">Select mitigation actions, see averaged cost and discount ranges, and compare payback for each action or for the full IBHS Prepared Home option.</div>
-      </div>
-
-      <div class="content">
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <h2>Inputs</h2>
-              <div class="hint">Annual wildfire premium portion drives the savings estimates.</div>
-            </div>
-
-            <div class="grid">
-              <div class="field field--premium">
-                <label for="annualPremium">Annual wildfire premium portion ($/yr)</label>
-                <input id="annualPremium" type="text" value="20000" />
-              </div>
-
-              <div class="field field--button">
-                <label>&nbsp;</label>
-                <button id="recalculateBtn" type="button">Recalculate</button>
-              </div>
-
-              <div class="field field--spacer">
-                <label>&nbsp;</label>
-                <div class="toolbar">
-                  <button id="selectAllBtn" type="button" class="secondary">Select All Actions</button>
-                  <button id="clearBtn" type="button" class="ghost">Clear Selection</button>
-                  <button id="ibhsPreparedBtn" type="button" class="secondary">Select IBHS Wildfire Prepared Home</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="status" id="status"></div>
-          </div>
-        </section>
-
-        <section class="stack-card">
-          <div class="section-title">
-            <h3>Selected Mitigation Package</h3>
-            <div class="hint">Costs and discounts are based on each action’s midpoint.</div>
-          </div>
-
-          <div class="stack-grid">
-            <div class="stack-item"><div class="label">Actions selected</div><div class="value" id="selectedCountValue">0</div></div>
-            <div class="stack-item"><div class="label">Selected average cost</div><div class="value" id="selectedCostValue">$0</div></div>
-            <div class="stack-item"><div class="label">Selected average discount</div><div class="value" id="selectedDiscountValue">0.0%</div></div>
-            <div class="stack-item"><div class="label">Selected annual savings</div><div class="value" id="selectedSavingsValue">$0</div></div>
-            <div class="stack-item"><div class="label">Package payback</div><div class="value" id="selectedPaybackValue">Not reachable</div></div>
-            <div class="stack-item"><div class="label">1-year savings</div><div class="value" id="oneYearValue">$0</div></div>
-            <div class="stack-item"><div class="label">3-year savings</div><div class="value" id="threeYearValue">$0</div></div>
-            <div class="stack-item"><div class="label">5-year savings</div><div class="value" id="fiveYearValue">$0</div></div>
-          </div>
-
-          <div class="selected-list" id="selectedActionsList">No actions selected yet.</div>
-        </section>
-
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <h3>Wildfire Mitigation Actions</h3>
-              <div class="hint">Click any row to add or remove it from the package.</div>
-            </div>
-
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Mitigation Action</th>
-                    <th>Average Cost</th>
-                    <th>Average Discount</th>
-                    <th>Annual Savings</th>
-                    <th>Payback (Years)</th>
-                    <th>Why It Matters</th>
-                  </tr>
-                </thead>
-                <tbody id="actionsTableBody"></tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <h3>Policy-Term Comparison</h3>
-              <div class="hint">Shows what happens over 1, 3, and 5 years for the selected package.</div>
-            </div>
-
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Term</th>
-                    <th>Savings</th>
-                    <th>Net After Term</th>
-                    <th>Payback Reached?</th>
-                  </tr>
-                </thead>
-                <tbody id="policyTableBody"></tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-        <section class="card tabs">
-          <div class="tab-buttons">
-            <button class="active" type="button" data-tab="assumptions">Assumptions</button>
-            <button type="button" data-tab="sources">Sources</button>
-          </div>
-
-          <div class="tab-panel active" id="tab-assumptions">
-            1. Discount ranges shown are source-backed ranges from admitted-market/mitigation literature used in your provided references (RFF WP 25-30, Insurance for Good, and related wildfire mitigation discount evidence).<br />
-            2. Each individual action uses midpoint cost and midpoint discount to compute annual savings and payback.<br />
-            3. Package savings are computed as annual wildfire premium portion × combined midpoint discount (capped at 100%).<br />
-            4. IBHS Wildfire Prepared Home is included as a clickable option alongside individual actions.
-          </div>
-
-          <div class="tab-panel" id="tab-sources">
-            FutureProof analysis; Headwaters Economics (Barrett &amp; Quarles 2025); RFF WP 25-30 (Ludington, Liao &amp; Walls, Dec. 2025); Insurance for Good (Kousky &amp; You, Nov. 2025); IBHS wildfire hardening guidance.
-          </div>
-        </section>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">CROB Retreat</div>
+      <h1>Open the outreach HTML pages from one place</h1>
+      <p class="summary">
+        Click a page below to open the map, the distressed ZIP coverage analysis, or the combined dashboard.
+        This index page is the simple entry point for the repo.
+      </p>
+      <div class="links">
+        <a class="button" href="outreach_dashboard.html">Open dashboard</a>
+        <a class="button secondary" href="outreach_heatmap.html">Open outreach map</a>
+        <a class="button secondary" href="zip_coverage_analysis.html">Open ZIP coverage</a>
       </div>
     </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Dashboard</h2>
+        <p>Combined view with both the outreach map and distressed ZIP coverage analysis.</p>
+        <a class="button" href="outreach_dashboard.html">View dashboard</a>
+      </article>
+      <article class="card">
+        <h2>Outreach Map</h2>
+        <p>Interactive heatmap and clustered event map for outreach activity.</p>
+        <a class="button" href="outreach_heatmap.html">View map</a>
+      </article>
+      <article class="card">
+        <h2>ZIP Coverage</h2>
+        <p>Paste a distressed ZIP list and review which areas need attention first.</p>
+        <a class="button" href="zip_coverage_analysis.html">View coverage</a>
+      </article>
+    </section>
   </main>
-
-  <script>
-    const ACTIONS = [
-      { name: "0-5 Foot Noncombustible Zone", costLow: 3000, costHigh: 5000, discountLow: 0.1, discountHigh: 1.5, note: "IBHS research shows this single measure cuts a home's ignition risk roughly in half.", kind: "individual" },
-      { name: "Enclosed Eaves", costLow: 3000, costHigh: 4500, discountLow: 0.1, discountHigh: 1.0, note: "Open eaves trap embers against the roof deck, the most vulnerable structural entry point.", kind: "individual" },
-      { name: "Ember-Resistant Vents", costLow: 1500, costHigh: 2500, discountLow: 0.1, discountHigh: 2.0, note: "Unscreened vents allow wind-driven embers directly into attic and crawl spaces.", kind: "individual" },
-      { name: "Dual-Pane Tempered Glass Windows", costLow: 2400, costHigh: 4800, discountLow: 0.1, discountHigh: 5.0, note: "Single-pane windows shatter at lower temperatures, allowing flames and embers inside.", kind: "individual" },
-      { name: "Class A Fire-Rated Roof", costLow: 10000, costHigh: 30000, discountLow: 3.5, discountHigh: 5.0, note: "The highest level of fire resistance, crucial for mitigation because it prevents ignition from embers during wildfires and resists fire penetration longer than Class B or C materials.", kind: "individual" },
-      { name: "IBHS Wildfire Prepared Home", costLow: 12000, costHigh: 30000, discountLow: 2.0, discountHigh: 28.0, note: "The Insurance Institute for Business & Home Safety (IBHS) Wildfire Prepared Home™ is a science-based mitigation program designed to help homeowners reduce their home's ignition risk from wildfires.", kind: "ibhs" },
-    ];
-
-    const POLICY_TERMS = [1, 3, 5];
-    const selectedIndices = new Set();
-
-    const annualPremiumInput = document.getElementById("annualPremium");
-    const statusEl = document.getElementById("status");
-    const actionsTableBodyEl = document.getElementById("actionsTableBody");
-    const policyTableBodyEl = document.getElementById("policyTableBody");
-    const selectedCountValueEl = document.getElementById("selectedCountValue");
-    const selectedCostValueEl = document.getElementById("selectedCostValue");
-    const selectedDiscountValueEl = document.getElementById("selectedDiscountValue");
-    const selectedSavingsValueEl = document.getElementById("selectedSavingsValue");
-    const selectedPaybackValueEl = document.getElementById("selectedPaybackValue");
-    const selectedActionsListEl = document.getElementById("selectedActionsList");
-    const oneYearValueEl = document.getElementById("oneYearValue");
-    const threeYearValueEl = document.getElementById("threeYearValue");
-    const fiveYearValueEl = document.getElementById("fiveYearValue");
-
-    const currency = (value) => `$${Math.round(value).toLocaleString("en-US")}`;
-    const percent = (value) => `${value.toFixed(1)}%`;
-    const yearsText = (value) => Number.isFinite(value) ? `${value.toFixed(1)} yrs` : "Not reachable";
-
-    function parseMoney(value, label) {
-      const cleaned = String(value).trim().replaceAll("$", "").replaceAll(",", "");
-      if (!cleaned) throw new Error(`${label} is required.`);
-      const amount = Number(cleaned);
-      if (!Number.isFinite(amount)) throw new Error(`${label} must be a number.`);
-      if (amount < 0) throw new Error(`${label} must be non-negative.`);
-      return amount;
-    }
-
-    function midpoint(low, high) {
-      return (low + high) / 2;
-    }
-
-    function selectedActionItems() {
-      return ACTIONS
-        .map((action, index) => ({ action, index }))
-        .filter(({ index }) => selectedIndices.has(index));
-    }
-
-    function selectedSummary(annualPremium) {
-      const selected = selectedActionItems();
-
-      if (!selected.length) {
-        return { count: 0, cost: 0, discount: 0, savings: 0, payback: Number.POSITIVE_INFINITY };
-      }
-
-      const cost = selected.reduce((total, { action }) => total + midpoint(action.costLow, action.costHigh), 0);
-      const discount = Math.min(
-        selected.reduce((total, { action }) => total + midpoint(action.discountLow, action.discountHigh), 0),
-        100
-      );
-      const savings = annualPremium * (discount / 100);
-      const payback = savings > 0 ? cost / savings : Number.POSITIVE_INFINITY;
-
-      return { count: selected.length, cost, discount, savings, payback };
-    }
-
-    function updateSummary(annualPremium) {
-      const summary = selectedSummary(annualPremium);
-      const selected = selectedActionItems();
-      const selectedNames = selected.map(({ action }) => action.name);
-
-      selectedCountValueEl.textContent = String(summary.count);
-      selectedCostValueEl.textContent = currency(summary.cost);
-      selectedDiscountValueEl.textContent = percent(summary.discount);
-      selectedSavingsValueEl.textContent = currency(summary.savings);
-      selectedPaybackValueEl.textContent = yearsText(summary.payback);
-      oneYearValueEl.textContent = currency(summary.savings * 1);
-      threeYearValueEl.textContent = currency(summary.savings * 3);
-      fiveYearValueEl.textContent = currency(summary.savings * 5);
-      selectedActionsListEl.textContent = selectedNames.length
-        ? selectedNames.join(", ")
-        : "No actions selected yet.";
-    }
-
-    function renderPolicyComparison(annualPremium) {
-      policyTableBodyEl.innerHTML = "";
-      const summary = selectedSummary(annualPremium);
-
-      POLICY_TERMS.forEach((term, index) => {
-        const savings = summary.savings * term;
-        const net = savings - summary.cost;
-        const tr = document.createElement("tr");
-        tr.className = index % 2 === 0 ? "even" : "odd";
-        tr.innerHTML = `
-          <td>${term}-Year</td>
-          <td>${currency(savings)}</td>
-          <td>${net >= 0 ? "+" : "-"}${currency(Math.abs(net))}</td>
-          <td>${savings >= summary.cost ? "Yes" : "No"}</td>
-        `;
-        policyTableBodyEl.appendChild(tr);
-      });
-    }
-
-    function renderActions(annualPremium) {
-      actionsTableBodyEl.innerHTML = "";
-
-      ACTIONS.forEach((action, index) => {
-        const avgCost = midpoint(action.costLow, action.costHigh);
-        const avgDiscount = midpoint(action.discountLow, action.discountHigh);
-        const savings = annualPremium * (avgDiscount / 100);
-        const payback = savings > 0 ? avgCost / savings : Number.POSITIVE_INFINITY;
-
-        const tr = document.createElement("tr");
-        tr.className = "clickable-row";
-        if (selectedIndices.has(index)) {
-          tr.classList.add("selected");
-        }
-
-        tr.innerHTML = `
-          <td><span class="action-cell"><span class="check-pill">✓</span><span>${action.name}</span></span></td>
-          <td>${currency(avgCost)}</td>
-          <td>${percent(avgDiscount)}</td>
-          <td>${currency(savings)}</td>
-          <td>${yearsText(payback)}</td>
-          <td>${action.note}</td>
-        `;
-
-        tr.addEventListener("click", () => {
-          if (selectedIndices.has(index)) {
-            selectedIndices.delete(index);
-          } else {
-            selectedIndices.add(index);
-          }
-          render();
-        });
-
-        actionsTableBodyEl.appendChild(tr);
-      });
-    }
-
-    function render() {
-      statusEl.textContent = "";
-
-      try {
-        const annualPremium = parseMoney(annualPremiumInput.value, "Annual wildfire premium portion");
-        updateSummary(annualPremium);
-        renderPolicyComparison(annualPremium);
-        renderActions(annualPremium);
-      } catch (error) {
-        statusEl.textContent = error.message;
-        selectedCountValueEl.textContent = "0";
-        selectedCostValueEl.textContent = "$0";
-        selectedDiscountValueEl.textContent = "0.0%";
-        selectedSavingsValueEl.textContent = "$0";
-        selectedPaybackValueEl.textContent = "Not reachable";
-        oneYearValueEl.textContent = "$0";
-        threeYearValueEl.textContent = "$0";
-        fiveYearValueEl.textContent = "$0";
-        selectedActionsListEl.textContent = "No actions selected yet.";
-        actionsTableBodyEl.innerHTML = "";
-        policyTableBodyEl.innerHTML = "";
-      }
-    }
-
-    document.getElementById("recalculateBtn").addEventListener("click", render);
-    document.getElementById("selectAllBtn").addEventListener("click", () => {
-      ACTIONS.forEach((_, index) => selectedIndices.add(index));
-      render();
-    });
-    document.getElementById("clearBtn").addEventListener("click", () => {
-      selectedIndices.clear();
-      render();
-    });
-    document.getElementById("ibhsPreparedBtn").addEventListener("click", () => {
-      selectedIndices.clear();
-      selectedIndices.add(ACTIONS.findIndex((action) => action.name === "IBHS Wildfire Prepared Home"));
-      render();
-    });
-
-    annualPremiumInput.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") render();
-    });
-
-    document.querySelectorAll(".tab-buttons button").forEach((button) => {
-      button.addEventListener("click", () => {
-        document.querySelectorAll(".tab-buttons button").forEach((item) => item.classList.remove("active"));
-        document.querySelectorAll(".tab-panel").forEach((panel) => panel.classList.remove("active"));
-        button.classList.add("active");
-        document.getElementById(`tab-${button.dataset.tab}`).classList.add("active");
-      });
-    });
-
-    render();
-  </script>
 </body>
 </html>

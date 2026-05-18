@@ -10,6 +10,7 @@ This tool generates an interactive geographic heatmap with clustering and event 
 - **GeoJSON ZIP boundaries**: converts ZIP codes to accurate polygon centroids (no API key needed)
 
 ## Files
+- [index.html](index.html) — main entry page with links to the HTML views
 - [requirements.txt](requirements.txt) — Python dependencies
 - [outreach_events.csv](outreach_events.csv) — your Quorum export data
 - [geocode_heatmap.py](geocode_heatmap.py) — main script
@@ -46,6 +47,7 @@ python geocode_heatmap.py --input outreach_events.csv --output outreach_heatmap.
 If you don't provide `--zip-geojson`, the script will fall back to ZIP centroid lookup via `pgeocode`.
 
 ## Next steps
+- Open [index.html](index.html) first, then click the page you want
 - Replace `outreach_events.csv` with your real data
 - Customize marker colors, clustering behavior, or heatmap intensity as needed
 - Open `outreach_dashboard.html` to review both views in one place and share the page from GitHub
