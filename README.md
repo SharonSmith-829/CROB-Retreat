@@ -15,6 +15,8 @@ This tool generates an interactive geographic heatmap with clustering and event 
 - [geocode_heatmap.py](geocode_heatmap.py) — main script
 - [outreach_events_geocoded.csv](outreach_events_geocoded.csv) — geocoded events (created on first run)
 - [outreach_heatmap.html](outreach_heatmap.html) — interactive map (open in browser)
+- [outreach_dashboard.html](outreach_dashboard.html) — combined outreach map and distressed ZIP coverage page
+- [zip_coverage_analysis.html](zip_coverage_analysis.html) — distressed ZIP analysis tool
 
 ## Quick start (Windows PowerShell)
 
@@ -46,4 +48,5 @@ If you don't provide `--zip-geojson`, the script will fall back to ZIP centroid 
 ## Next steps
 - Replace `outreach_events.csv` with your real data
 - Customize marker colors, clustering behavior, or heatmap intensity as needed
+- Open `outreach_dashboard.html` to review both views in one place and share the page from GitHub
 
