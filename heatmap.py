@@ -13,6 +13,13 @@ import folium
 from folium.plugins import HeatMap
 
 
+def _clean_text(value):
+    if pd.isna(value):
+        return ''
+    text = str(value).strip()
+    return '' if text.lower() == 'nan' else text
+
+
 def make_heatmap(df, output, lat_col='latitude', lon_col='longitude', radius=15, blur=10, start_zoom=10):
     if df.empty:
         raise ValueError('Dataframe is empty')
@@ -21,7 +28,55 @@ def make_heatmap(df, output, lat_col='latitude', lon_col='longitude', radius=15,
         raise ValueError('No valid coordinate rows found')
     center = [float(coords[lat_col].mean()), float(coords[lon_col].mean())]
     m = folium.Map(location=center, zoom_start=start_zoom)
-    HeatMap(data=coords.values.tolist(), radius=radius, blur=blur).add_to(m)
+
+    # Heatmap layer (base overlay)
+    heat_fg = folium.FeatureGroup(name='Heatmap', show=True)
+    HeatMap(data=coords.values.tolist(), radius=radius, blur=blur).add_to(heat_fg)
+    heat_fg.add_to(m)
+
+    # Add per-person layers with markers
+    # Use CreatorFirstName and CreatorLastName if present, else fall back to 'Unknown'
+    if 'CreatorFirstName' in df.columns or 'CreatorLastName' in df.columns:
+        creators = {}
+        for _, row in df.iterrows():
+            lat = row.get(lat_col)
+            lon = row.get(lon_col)
+            if pd.isna(lat) or pd.isna(lon) or str(lat).strip()=='' or str(lon).strip()=='':
+                continue
+            fname = _clean_text(row.get('CreatorFirstName', ''))
+            lname = _clean_text(row.get('CreatorLastName', ''))
+            creator = (fname + ' ' + lname).strip() or 'Unknown'
+            creators.setdefault(creator, []).append(row)
+
+        for creator, rows in creators.items():
+            fg = folium.FeatureGroup(name=creator, show=False)
+            for r in rows:
+                try:
+                    plat = float(r.get(lat_col))
+                    plon = float(r.get(lon_col))
+                except Exception:
+                    continue
+                popup_parts = []
+                note_date = _clean_text(r.get('NoteStartDate'))
+                interaction_type = _clean_text(r.get('InteractionType'))
+                organization = _clean_text(r.get('Organizations'))
+                text = _clean_text(r.get('Text'))
+                if note_date:
+                    popup_parts.append(note_date)
+                if interaction_type:
+                    popup_parts.append(interaction_type)
+                if organization:
+                    popup_parts.append(organization)
+                if text:
+                    txt = text
+                    if len(txt) > 200:
+                        txt = txt[:197] + '...'
+                    popup_parts.append(txt)
+                popup = '<br/>'.join(popup_parts)
+                folium.CircleMarker(location=(plat, plon), radius=5, color='blue', fill=True, fill_opacity=0.7, popup=popup).add_to(fg)
+            fg.add_to(m)
+    # Add layer control so users can toggle creators
+    folium.LayerControl(collapsed=False).add_to(m)
     m.save(output)
     print(f'Saved heatmap to {output}')
 
