@@ -217,7 +217,7 @@
           </div>
 
           <div class="field">
-            <label for="csvFileInput">Outreach CSV file (default: outreach_events_clean_geocoded.csv)</label>
+            <label for="csvFileInput">Outreach CSV file (default: outreach_events_distressed_subset.csv)</label>
             <input id="csvFileInput" type="file" accept=".csv,text/csv" />
             <div class="toolbar">
               <button id="loadDefaultBtn" type="button">Load Default CSV</button>
@@ -864,7 +864,7 @@
     async function loadDefaultCsv() {
       statusEl.textContent = "Loading default outreach coverage data...";
       try {
-        const csvResponse = await fetch("outreach_events_clean_geocoded.csv");
+      const csvResponse = await fetch("outreach_events_distressed_subset.csv");
         if (!csvResponse.ok) throw new Error("CSV HTTP " + csvResponse.status);
         loadedCsvText = await csvResponse.text();
 
