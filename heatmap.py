@@ -10,7 +10,8 @@ import sys
 
 import pandas as pd
 import folium
-from folium.plugins import HeatMap
+from folium.plugins import HeatMap, MarkerCluster
+from branca.element import MacroElement, Template
 
 
 def _clean_text(value):
@@ -26,57 +27,119 @@ def make_heatmap(df, output, lat_col='latitude', lon_col='longitude', radius=15,
     coords = df[[lat_col, lon_col]].dropna()
     if coords.empty:
         raise ValueError('No valid coordinate rows found')
-    center = [float(coords[lat_col].mean()), float(coords[lon_col].mean())]
+    center = [36.7, -119.0]
     m = folium.Map(location=center, zoom_start=start_zoom)
 
-    # Heatmap layer (base overlay)
-    heat_fg = folium.FeatureGroup(name='Heatmap', show=True)
+    # Optional heat overlay, kept hidden by default to preserve the older marker-focused look.
+    heat_fg = folium.FeatureGroup(name='Heatmap', show=False)
     HeatMap(data=coords.values.tolist(), radius=radius, blur=blur).add_to(heat_fg)
     heat_fg.add_to(m)
 
-    # Add per-person layers with markers
-    # Use CreatorFirstName and CreatorLastName if present, else fall back to 'Unknown'
-    if 'CreatorFirstName' in df.columns or 'CreatorLastName' in df.columns:
-        creators = {}
-        for _, row in df.iterrows():
-            lat = row.get(lat_col)
-            lon = row.get(lon_col)
-            if pd.isna(lat) or pd.isna(lon) or str(lat).strip()=='' or str(lon).strip()=='':
-                continue
-            fname = _clean_text(row.get('CreatorFirstName', ''))
-            lname = _clean_text(row.get('CreatorLastName', ''))
-            creator = (fname + ' ' + lname).strip() or 'Unknown'
-            creators.setdefault(creator, []).append(row)
+    # All events cluster.
+    all_events_group = folium.FeatureGroup(name='All Events (clustered)', show=True)
+    all_events_group.add_to(m)
+    marker_cluster = MarkerCluster().add_to(all_events_group)
 
-        for creator, rows in creators.items():
-            fg = folium.FeatureGroup(name=creator, show=False)
-            for r in rows:
-                try:
-                    plat = float(r.get(lat_col))
-                    plon = float(r.get(lon_col))
-                except Exception:
-                    continue
-                popup_parts = []
-                note_date = _clean_text(r.get('NoteStartDate'))
-                interaction_type = _clean_text(r.get('InteractionType'))
-                organization = _clean_text(r.get('Organizations'))
-                text = _clean_text(r.get('Text'))
-                if note_date:
-                    popup_parts.append(note_date)
-                if interaction_type:
-                    popup_parts.append(interaction_type)
-                if organization:
-                    popup_parts.append(organization)
-                if text:
-                    txt = text
-                    if len(txt) > 200:
-                        txt = txt[:197] + '...'
-                    popup_parts.append(txt)
-                popup = '<br/>'.join(popup_parts)
-                folium.CircleMarker(location=(plat, plon), radius=5, color='blue', fill=True, fill_opacity=0.7, popup=popup).add_to(fg)
-            fg.add_to(m)
-    # Add layer control so users can toggle creators
-    folium.LayerControl(collapsed=False).add_to(m)
+    creator_groups = {}
+    for _, row in coords.join(df.drop(columns=[lat_col, lon_col], errors='ignore')).iterrows():
+        try:
+            lat_val = float(row[lat_col])
+            lon_val = float(row[lon_col])
+        except Exception:
+            continue
+
+        creator = f"{_clean_text(row.get('CreatorFirstName', ''))} {_clean_text(row.get('CreatorLastName', ''))}".strip()
+        if not creator:
+            creator = 'Unknown'
+
+        interaction_type = _clean_text(row.get('InteractionType')) or 'Unknown'
+        topic = _clean_text(row.get('Topic')) or 'N/A'
+        attendees = _clean_text(row.get('AttendeesOrViews')) or '0'
+        date_str = _clean_text(row.get('NoteStartDate')) or 'N/A'
+        org = _clean_text(row.get('Organizations')) or 'N/A'
+        text = _clean_text(row.get('Text'))
+        if len(text) > 220:
+            text = text[:217] + '...'
+
+        popup_text = f"""
+        <b>Event</b><br>
+        Type: {interaction_type}<br>
+        Date: {date_str}<br>
+        Topic: {topic}<br>
+        Attendees: {attendees}<br>
+        Organization: {org}<br>
+        Creator: {creator}<br>
+        {text}
+        """
+
+        if creator not in creator_groups:
+            creator_groups[creator] = folium.FeatureGroup(name=f'Events by {creator}', show=True)
+            creator_groups[creator].add_to(m)
+
+        icon = folium.Icon(color='blue', icon='info-sign')
+        folium.Marker(
+            location=[lat_val, lon_val],
+            popup=folium.Popup(popup_text, max_width=320),
+            tooltip=f"{interaction_type} - {creator}",
+            icon=icon,
+        ).add_to(creator_groups[creator])
+
+        folium.Marker(
+            location=[lat_val, lon_val],
+            popup=folium.Popup(popup_text, max_width=320),
+            tooltip=f"{interaction_type} - {creator}",
+            icon=icon,
+        ).add_to(marker_cluster)
+
+    folium.LayerControl().add_to(m)
+
+    clear_filters = MacroElement()
+    clear_filters._template = Template(
+        """
+        {% macro script(this, kwargs) %}
+        var clearFiltersControl = L.control({position: 'topright'});
+        clearFiltersControl.onAdd = function (map) {
+            var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+            container.style.backgroundColor = 'white';
+            container.style.borderRadius = '4px';
+            container.style.boxShadow = '0 1px 5px rgba(0, 0, 0, 0.4)';
+            container.style.overflow = 'hidden';
+
+            var button = L.DomUtil.create('a', '', container);
+            button.href = '#';
+            button.title = 'Reset filters';
+            button.innerHTML = 'Reset filters';
+            button.style.display = 'block';
+            button.style.padding = '6px 10px';
+            button.style.background = '#2b6cb0';
+            button.style.color = 'white';
+            button.style.textDecoration = 'none';
+            button.style.fontSize = '13px';
+            button.style.width = 'auto';
+            button.style.minWidth = '110px';
+            button.style.height = 'auto';
+            button.style.lineHeight = '1.2';
+            button.style.whiteSpace = 'nowrap';
+            button.style.textAlign = 'center';
+
+            L.DomEvent.disableClickPropagation(container);
+            L.DomEvent.on(button, 'click', function (e) {
+                L.DomEvent.stop(e);
+                var inputs = document.querySelectorAll('.leaflet-control-layers-overlays input[type="checkbox"]');
+                inputs.forEach(function (input) {
+                    if (input.checked) {
+                        input.click();
+                    }
+                });
+            });
+
+            return container;
+        };
+        clearFiltersControl.addTo({{this._parent.get_name()}});
+        {% endmacro %}
+        """
+    )
+    m.add_child(clear_filters)
     m.save(output)
     print(f'Saved heatmap to {output}')
 
